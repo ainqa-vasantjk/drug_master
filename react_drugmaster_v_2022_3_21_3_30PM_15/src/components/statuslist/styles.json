@@ -1,5 +1,5 @@
 {
-  "NVcG": { "paddingValue": "20", "paddingType": "px", "padding": "20px" },
+  "NVcG": { "paddingValue": "20", "paddingType": "px","margin":"12px 0" },
   "iQoAg": {},
   "KBgPH": {
     "fontSizeValue": "12",
@@ -48,10 +48,10 @@
   "iLh": {
     "widthValue": "26",
     "widthType": "px",
-    "width": "26px",
+    "width": "16px",
     "heightValue": "26",
     "heightType": "px",
-    "height": "26px",
+    "height": "16px",
     "marginLeftValue": "10",
     "marginLeftType": "px",
     "marginLeft": "10px"

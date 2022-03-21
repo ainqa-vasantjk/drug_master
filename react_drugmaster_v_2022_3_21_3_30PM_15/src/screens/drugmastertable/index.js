@@ -134,6 +134,9 @@ class Drugmastertable extends React.Component {
                       style={qdmstyles.SDcP}
                     >
                       <Button
+                        onClick={() => {
+                          this.props.history.push("/drugintscreen");
+                        }}
                         key={"0"}
                         id={"HlSGX"}
                         variant={"contained"}
