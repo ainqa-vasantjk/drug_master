@@ -237,7 +237,7 @@ function Aliasmappingcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            label={""}
                             variant="outlined"
                           />
                         )}
@@ -274,7 +274,7 @@ function Aliasmappingcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            label={""}
                             variant="outlined"
                           />
                         )}

@@ -185,6 +185,12 @@ class Alertrestriction extends React.Component {
                         },
                       },
                     ]}
+                    stepperActiveTextColor={"green"}
+                    nextLabel={"save"}
+                    nextButtonBackground={"black"}
+                    previousButtonBackground={"daddad"}
+                    previousButtonTextColor={"cancel"}
+                    nextButtonTextColor={"blue"}
                   ></MuiStepper>
                 </Grid>
                 <Grid
@@ -219,6 +225,7 @@ class Alertrestriction extends React.Component {
                     children={"Previous"}
                     aliasName={"addnewdrugcatalogsaveandprocessbutton"}
                     style={qdmstyles.gbXf}
+                    disableElevation={true}
                   ></Button>
                   <Button
                     key={"2"}
@@ -227,6 +234,7 @@ class Alertrestriction extends React.Component {
                     color={"primary"}
                     children={"Save"}
                     style={qdmstyles.uvMp}
+                    disableElevation={true}
                   ></Button>
                 </Grid>
               </Grid>

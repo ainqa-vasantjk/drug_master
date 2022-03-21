@@ -524,13 +524,13 @@
     "fontWeight": "500",
     "fontSizeValue": "14",
     "fontSizeType": "px",
-    "fontSize": "14px",
+    "fontSize": "16px",
     "lineHeightValue": "25",
     "lineHeightType": "px",
     "lineHeight": "25px",
     "letterSpacingValue": "0",
     "letterSpacingType": "px",
-    "letterSpacing": "0px",
+    "letterSpacing": "-0.32px",
     "color": "#2A3C50"
   },
   "uvMp": {
@@ -541,7 +541,8 @@
     "lineHeightValue": "25",
     "lineHeightType": "px",
     "lineHeight": "25px",
-    "fontWeight": "500"
+    "fontWeight": "500",
+    "letterSpacing": "0"
   },
   "lPm": {
     "paddingValue": "15",

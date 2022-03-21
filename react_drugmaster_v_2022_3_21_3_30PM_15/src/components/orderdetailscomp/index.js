@@ -310,7 +310,6 @@ function Orderdetailscomp(props) {
                 alignItems={"flex-start"}
                 lg={"auto"}
                 item={true}
-                alignContent={"stretch"}
                 md={"auto"}
                 sm={"auto"}
                 xl={"auto"}
@@ -527,10 +526,10 @@ function Orderdetailscomp(props) {
                             alignItems={"center"}
                             lg={"4"}
                             item={true}
-                            md={"6"}
-                            sm={"6"}
+                            md={"4"}
+                            sm={"4"}
                             xl={"4"}
-                            xs={"6"}
+                            xs={"4"}
                             style={qdmstyles.TcBm}
                           >
                             <Typography
@@ -553,6 +552,7 @@ function Orderdetailscomp(props) {
                                     state?.orderdetailscomp_r9iil ?? null,
                                 })
                               }
+                              size="small"
                               getOptionLabel={(option) => option?.["label"]}
                               options={[] ?? []}
                               renderInput={(params) => (
@@ -573,10 +573,10 @@ function Orderdetailscomp(props) {
                             alignItems={"center"}
                             lg={"2"}
                             item={true}
-                            md={"3"}
-                            sm={"3"}
+                            md={"4"}
+                            sm={"4"}
                             xl={"2"}
-                            xs={"3"}
+                            xs={"4"}
                           >
                             <Typography
                               key={"0"}
@@ -625,7 +625,8 @@ function Orderdetailscomp(props) {
                                   type={"text"}
                                   variant={"outlined"}
                                   fullWidth={true}
-                                  margin={"dense"}
+                                  margin={"none"}
+                                  size="small"
                                 ></TextField>
                               </Grid>
                               <Divider
@@ -660,6 +661,7 @@ function Orderdetailscomp(props) {
                                         state?.orderdetailscomp_4hhru ?? null,
                                     })
                                   }
+                                  size="small"
                                   getOptionLabel={(option) => option?.["label"]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
@@ -682,10 +684,10 @@ function Orderdetailscomp(props) {
                             alignItems={"center"}
                             lg={"2"}
                             item={true}
-                            md={"3"}
-                            sm={"3"}
+                            md={"4"}
+                            sm={"4"}
                             xl={"2"}
-                            xs={"3"}
+                            xs={"4"}
                           >
                             <Typography
                               key={"0"}
@@ -734,7 +736,7 @@ function Orderdetailscomp(props) {
                                   type={"text"}
                                   variant={"outlined"}
                                   fullWidth={true}
-                                  margin={"dense"}
+                                  size="small"
                                 ></TextField>
                               </Grid>
                               <Divider
@@ -769,6 +771,7 @@ function Orderdetailscomp(props) {
                                         state?.orderdetailscomp_n4cbf ?? null,
                                     })
                                   }
+                                  size="small"
                                   getOptionLabel={(option) => option?.["label"]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
@@ -843,7 +846,7 @@ function Orderdetailscomp(props) {
                                   type={"text"}
                                   variant={"outlined"}
                                   fullWidth={true}
-                                  margin={"dense"}
+                                  size="small"
                                 ></TextField>
                               </Grid>
                               <Divider
@@ -878,6 +881,7 @@ function Orderdetailscomp(props) {
                                         state?.orderdetailscomp_dbedu ?? null,
                                     })
                                   }
+                                  size="small"
                                   getOptionLabel={(option) => option?.["label"]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
@@ -952,7 +956,7 @@ function Orderdetailscomp(props) {
                                   type={"text"}
                                   variant={"outlined"}
                                   fullWidth={true}
-                                  margin={"dense"}
+                                  size="small"
                                 ></TextField>
                               </Grid>
                               <Divider
@@ -987,6 +991,7 @@ function Orderdetailscomp(props) {
                                         state?.orderdetailscomp_ase2r ?? null,
                                     })
                                   }
+                                  size="small"
                                   getOptionLabel={(option) => option?.["label"]}
                                   options={[] ?? []}
                                   renderInput={(params) => (

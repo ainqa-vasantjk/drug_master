@@ -153,7 +153,6 @@ function Steppercomponent(props) {
                   key={"0"}
                   id={"ifdFf"}
                   value={""}
-                 
                   stepsHeader={[
                     {
                       header: "Drug master setup",
@@ -174,6 +173,12 @@ function Steppercomponent(props) {
                       },
                     },
                   ]}
+                  stepperActiveTextColor={"green"}
+                  nextLabel={"save"}
+                  nextButtonBackground={"black"}
+                  previousButtonBackground={"daddad"}
+                  previousButtonTextColor={"cancel"}
+                  nextButtonTextColor={"blue"}
                 ></MuiStepper>
               </Grid>
               <Grid
