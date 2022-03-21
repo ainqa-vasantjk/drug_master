@@ -147,11 +147,13 @@ function Steppercomponent(props) {
                 xl={"5"}
                 xs={"5"}
                 item={true}
+                style={qdmstyles.stp}
               >
                 <MuiStepper
                   key={"0"}
                   id={"ifdFf"}
                   value={""}
+                 
                   stepsHeader={[
                     {
                       header: "Drug master setup",
@@ -194,6 +196,7 @@ function Steppercomponent(props) {
                   id={"add_new_drug_catalog_cancel_button"}
                   variant={"text"}
                   color={"primary"}
+                  size={"small"}
                   children={"cancel"}
                   aliasName={"addnewdrugcatalogcancelbutton"}
                   style={qdmstyles.tiSU}
@@ -207,6 +210,7 @@ function Steppercomponent(props) {
                   variant={"contained"}
                   color={"primary"}
                   children={"Save and Proceed"}
+                  size={"small"}
                   aliasName={"addnewdrugcatalogsaveandprocessbutton"}
                   style={qdmstyles.fBNLn}
                 ></Button>

@@ -349,8 +349,9 @@ class Drugintscreen extends React.Component {
                               size={"small"}
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
+                                size={"small"}
                                   {...params}
-                                  label={"label"}
+                                placeholder="label"
                                   variant="outlined"
                                 />
                               )}

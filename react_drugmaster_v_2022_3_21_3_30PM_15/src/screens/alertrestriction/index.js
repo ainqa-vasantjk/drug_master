@@ -287,6 +287,7 @@ class Alertrestriction extends React.Component {
                             color={"primary"}
                             children={"RANTD-01"}
                             disabled={true}
+                            size={"small"}
                             style={qdmstyles.VHoa}
                           ></Button>
                         </Box>
@@ -308,6 +309,7 @@ class Alertrestriction extends React.Component {
                             color={"primary"}
                             children={"Ranitidine Oral Tablet"}
                             disabled={true}
+                            size={"small"}
                             style={qdmstyles.aj}
                           ></Button>
                         </Box>
@@ -375,6 +377,7 @@ class Alertrestriction extends React.Component {
                               children={"Add New Rule Set"}
                               aliasName={"patientcriteriaaddnewrulesetbutton"}
                               style={qdmstyles.Wfr}
+                              size={"small"}
                             ></Button>
                           </Box>
                           <Typography
@@ -419,6 +422,7 @@ class Alertrestriction extends React.Component {
                                 "patientcriteriaaddexistingrulesetbutton"
                               }
                               style={qdmstyles.Sp}
+                              size={"small"}
                             ></Button>
                           </Box>
                         </Grid>
@@ -483,6 +487,7 @@ class Alertrestriction extends React.Component {
                                 "practitionercriteriaaddnewrulesetbutton"
                               }
                               style={qdmstyles.tIdq}
+                              size={"small"}
                             ></Button>
                           </Box>
                           <Typography
@@ -529,6 +534,7 @@ class Alertrestriction extends React.Component {
                                 "practitionercriteriaaddexistingrulesetbutton"
                               }
                               style={qdmstyles.eUuJA}
+                              size={"small"}
                             ></Button>
                           </Box>
                         </Grid>
@@ -569,6 +575,7 @@ class Alertrestriction extends React.Component {
                               children={"Restriction"}
                               disabled={true}
                               style={qdmstyles.nFTYT}
+                              size={"small"}
                             ></Button>
                             <Button
                               key={"1"}
@@ -577,6 +584,7 @@ class Alertrestriction extends React.Component {
                               color={"primary"}
                               children={"Alert"}
                               style={qdmstyles.AGMM}
+                              size={"small"}
                             ></Button>
                           </Box>
                         </Box>
@@ -606,6 +614,7 @@ class Alertrestriction extends React.Component {
                               color={"primary"}
                               children={"Alert & Stop"}
                               style={qdmstyles.GBi}
+                              size={"small"}
                             ></Button>
                             <Button
                               key={"1"}
@@ -615,6 +624,7 @@ class Alertrestriction extends React.Component {
                               children={"Continue with reason"}
                               disabled={true}
                               style={qdmstyles.vqTJG}
+                              size={"small"}
                             ></Button>
                             <Button
                               key={"2"}
@@ -624,6 +634,7 @@ class Alertrestriction extends React.Component {
                               children={"Informative alert"}
                               disabled={true}
                               style={qdmstyles.yXNEq}
+                              size={"small"}
                             ></Button>
                           </Box>
                         </Box>
