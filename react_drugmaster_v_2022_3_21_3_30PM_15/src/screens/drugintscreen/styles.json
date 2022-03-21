@@ -574,7 +574,7 @@
   "vQHg": {
     "paddingValue": "15",
     "paddingType": "px",
-    "padding": "15px",
+    "padding": "5px 14px 16px 14px",
     "marginValue": "2",
     "marginType": "px",
     "margin": "2px",
