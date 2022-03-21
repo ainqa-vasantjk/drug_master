@@ -1,0 +1,42 @@
+{
+  "rSQV": {},
+  "rTKoj": { "paddingValue": "4", "paddingType": "px", "padding": "4px" },
+  "XLmtk": {},
+  "VWEj": {
+    "borderRadius": "8px",
+    "paddingValue": "3",
+    "paddingType": "px",
+    "padding": "3px"
+  },
+  "LfiQ": {
+    "widthValue": "100",
+    "widthType": "%",
+    "width": "100%",
+    "heightValue": "100",
+    "heightType": "%",
+    "height": "100%"
+  },
+  "tVWH": {
+    "widthValue": "100",
+    "widthType": "%",
+    "width": "100%",
+    "marginValue": "2",
+    "marginType": "px",
+    "margin": "2px",
+    "paddingValue": "2",
+    "paddingType": "px",
+    "padding": "2px"
+  },
+  "AHfO": { "widthValue": "100", "widthType": "%", "width": "100%" },
+  "DTJw": { "borderRadius": "8px", "backgroundColor": "#DEE5EC", "color": "" },
+  "oMA": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px",
+    "textTransform": "capitalize"
+  }
+}

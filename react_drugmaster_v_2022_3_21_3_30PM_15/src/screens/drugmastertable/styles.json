@@ -1,0 +1,42 @@
+{
+  "SKKa": {
+    "backgroundColor": "#F3F4F7",
+    "paddingValue": "20",
+    "paddingType": "px",
+    "padding": "20px"
+  },
+  "zTaTr": { "paddingValue": "20", "paddingType": "px", "padding": "20px" },
+  "PUY": {},
+  "ajikb": {},
+  "Kfob": {
+    "color": "#001C3C",
+    "fontSizeValue": "16",
+    "fontSizeType": "px",
+    "fontSize": "16px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px",
+    "fontWeight": "600",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "SDcP": { "display": "flex", "justifyContent": "flex-end" },
+  "HlSGX": {
+    "backgroundColor": "#EC6A49",
+    "textTransform": "capitalize",
+    "borderRadius": "8px"
+  },
+  "TMgBy": {
+    "marginTopValue": "17",
+    "marginTopType": "px",
+    "marginTop": "17px"
+  },
+  "QlgdO": {},
+  "GxA": {
+    "borderWidth": "1px",
+    "borderColor": "#DEE5EC",
+    "borderStyle": "solid"
+  },
+  "ruPy": {}
+}
