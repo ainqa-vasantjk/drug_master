@@ -177,13 +177,13 @@ function Orderdetailscomp(props) {
                           state?.orderdetailscomp_xhcxn ?? null,
                       })
                     }
-                    getOptionLabel={(option) => option?.["label"]}
+                    getOptionLabel={(option) => option?.[""]}
                     options={[] ?? []}
                     size={"small"}
                     renderInput={(params) => (
                       <ALLMCORE.TextField
                         {...params}
-                        label={"label"}
+                        label={""}
                         variant="outlined"
                       />
                     )}
@@ -255,13 +255,13 @@ function Orderdetailscomp(props) {
                           state?.orderdetailscomp_i43fb ?? null,
                       })
                     }
-                    getOptionLabel={(option) => option?.["label"]}
+                    getOptionLabel={(option) => option?.[""]}
                     options={[] ?? []}
                     size={"small"}
                     renderInput={(params) => (
                       <ALLMCORE.TextField
                         {...params}
-                        label={"label"}
+                        label={""}
                         variant="outlined"
                       />
                     )}
@@ -553,12 +553,12 @@ function Orderdetailscomp(props) {
                                 })
                               }
                               size="small"
-                              getOptionLabel={(option) => option?.["label"]}
+                              getOptionLabel={(option) => option?.[""]}
                               options={[] ?? []}
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  label={""}
                                   variant="outlined"
                                 />
                               )}
@@ -662,12 +662,12 @@ function Orderdetailscomp(props) {
                                     })
                                   }
                                   size="small"
-                                  getOptionLabel={(option) => option?.["label"]}
+                                  getOptionLabel={(option) => option?.[""]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
                                     <ALLMCORE.TextField
                                       {...params}
-                                      label={"label"}
+                                      label={""}
                                       variant="outlined"
                                     />
                                   )}
@@ -772,12 +772,12 @@ function Orderdetailscomp(props) {
                                     })
                                   }
                                   size="small"
-                                  getOptionLabel={(option) => option?.["label"]}
+                                  getOptionLabel={(option) => option?.[""]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
                                     <ALLMCORE.TextField
                                       {...params}
-                                      label={"label"}
+                                      label={""}
                                       variant="outlined"
                                     />
                                   )}
@@ -882,12 +882,12 @@ function Orderdetailscomp(props) {
                                     })
                                   }
                                   size="small"
-                                  getOptionLabel={(option) => option?.["label"]}
+                                  getOptionLabel={(option) => option?.[""]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
                                     <ALLMCORE.TextField
                                       {...params}
-                                      label={"label"}
+                                      label={""}
                                       variant="outlined"
                                     />
                                   )}
@@ -992,12 +992,12 @@ function Orderdetailscomp(props) {
                                     })
                                   }
                                   size="small"
-                                  getOptionLabel={(option) => option?.["label"]}
+                                  getOptionLabel={(option) => option?.[""]}
                                   options={[] ?? []}
                                   renderInput={(params) => (
                                     <ALLMCORE.TextField
                                       {...params}
-                                      label={"label"}
+                                      label={""}
                                       variant="outlined"
                                     />
                                   )}
