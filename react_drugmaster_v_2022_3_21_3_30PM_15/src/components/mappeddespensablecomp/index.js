@@ -202,7 +202,7 @@ function Mappeddespensablecomp(props) {
                     renderInput={(params) => (
                       <ALLMCORE.TextField
                         {...params}
-                        label={"label"}
+                        placeholder="label"
                         variant="outlined"
                       />
                     )}

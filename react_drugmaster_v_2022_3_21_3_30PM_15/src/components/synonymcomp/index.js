@@ -241,7 +241,7 @@ function Synonymcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            placeholder="label"
                             variant="outlined"
                           />
                         )}
@@ -276,7 +276,7 @@ function Synonymcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            placeholder="label"
                             variant="outlined"
                           />
                         )}
@@ -350,7 +350,7 @@ function Synonymcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            placeholder="label"
                             variant="outlined"
                           />
                         )}
@@ -385,7 +385,7 @@ function Synonymcomp(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            placeholder="label"
                             variant="outlined"
                           />
                         )}

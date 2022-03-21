@@ -75,6 +75,7 @@ function Steppercomponent(props) {
               sm={"12"}
               xl={"12"}
               xs={"12"}
+              style={qdmstyles.stpp}
             >
               <Grid
                 key={"0"}
@@ -152,6 +153,7 @@ function Steppercomponent(props) {
                 <MuiStepper
                   key={"0"}
                   id={"ifdFf"}
+                  style={qdmstyles.stppr}
                   value={""}
                   stepsHeader={[
                     {

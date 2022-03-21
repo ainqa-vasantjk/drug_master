@@ -14,6 +14,8 @@
     "justifyContent": "center",
     "alignItems": "center"
   },
+  "stpp":{"margin":"0px 18px"},
+ 
   "HkVSt": {
     "widthValue": "",
     "widthType": "px",
@@ -39,7 +41,7 @@
   },
   "qqNI": {},
   "PzLi": {},
-  "stp":{"padding":"0px"},
+  "stp":{"padding":"0px!important"},
   "JGG": { "display": "flex", "justifyContent": "flex-end" },
   "tiSU": {
     "marginLeftValue": "10",

@@ -205,7 +205,7 @@ class Mappeddespensable extends React.Component {
                       renderInput={(params) => (
                         <ALLMCORE.TextField
                           {...params}
-                          label={"label"}
+                         placeholder="label"
                           variant="outlined"
                         />
                       )}
