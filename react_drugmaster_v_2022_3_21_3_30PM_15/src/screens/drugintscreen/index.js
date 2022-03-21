@@ -107,7 +107,7 @@ class Drugintscreen extends React.Component {
                 sm={"12"}
                 xl={"12"}
                 xs={"12"}
-                spacing={"2"}
+                spacing={"1"}
                 style={qdmstyles.mDLn}
               >
                 <Grid
@@ -288,10 +288,10 @@ class Drugintscreen extends React.Component {
                           justifyContent={"center"}
                           alignItems={"center"}
                           item={true}
-                          lg={1}
+                          lg={2}
                           md={"3"}
                           sm={"6"}
-                          xl={1}
+                          xl={2}
                           xs={"6"}
                         >
                           <Grid
@@ -510,10 +510,10 @@ class Drugintscreen extends React.Component {
                           justifyContent={"center"}
                           alignItems={"center"}
                           item={true}
-                          lg={"6"}
+                          lg={"5"}
                           md={"6"}
                           sm={"6"}
-                          xl={"6"}
+                          xl={"5"}
                           xs={"6"}
                         >
                           <Grid
@@ -666,7 +666,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -744,7 +744,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -818,7 +818,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -900,7 +900,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -1076,6 +1076,7 @@ class Drugintscreen extends React.Component {
                       <Grid
                         key={"0"}
                         id={"R3123"}
+                        spacing={"1"}
                         container={true}
                         direction={"row"}
                         justifyContent={"center"}
@@ -1144,7 +1145,7 @@ class Drugintscreen extends React.Component {
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                placeholder="label"
                                 variant="outlined"
                               />
                             )}
@@ -1180,7 +1181,7 @@ class Drugintscreen extends React.Component {
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                placeholder="label"
                                 variant="outlined"
                               />
                             )}
@@ -1190,6 +1191,7 @@ class Drugintscreen extends React.Component {
                       <Grid
                         key={"1"}
                         id={"nL5qY"}
+                        spacing={"1"}
                         container={true}
                         direction={"row"}
                         justifyContent={"center"}
@@ -1200,7 +1202,6 @@ class Drugintscreen extends React.Component {
                         sm={"6"}
                         xl={"2"}
                         xs={"6"}
-                        spacing={""}
                       >
                         <Grid
                           key={"0"}
@@ -1284,6 +1285,7 @@ class Drugintscreen extends React.Component {
                       <Grid
                         key={"2"}
                         id={"nL5qY"}
+                        spacing={"1"}
                         container={true}
                         direction={"row"}
                         justifyContent={"center"}
@@ -1294,7 +1296,6 @@ class Drugintscreen extends React.Component {
                         sm={"4"}
                         xl={"2"}
                         xs={"4"}
-                        spacing={""}
                       >
                         <Grid
                           key={"0"}
@@ -1378,6 +1379,7 @@ class Drugintscreen extends React.Component {
                       <Grid
                         key={"3"}
                         id={"nL5qY"}
+                        spacing={"1"}
                         container={true}
                         direction={"row"}
                         justifyContent={"center"}
@@ -1388,7 +1390,6 @@ class Drugintscreen extends React.Component {
                         sm={"3"}
                         xl={"2"}
                         xs={"3"}
-                        spacing={""}
                       >
                         <Grid
                           key={"0"}
@@ -1429,6 +1430,7 @@ class Drugintscreen extends React.Component {
                           sm={"12"}
                           xl={"12"}
                           xs={"12"}
+                          spacing={"1"}
                         >
                           <Grid
                             key={"0"}
@@ -1485,7 +1487,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -1505,6 +1507,7 @@ class Drugintscreen extends React.Component {
                           sm={"12"}
                           xl={"12"}
                           xs={"12"}
+                          spacing={"1"}
                         >
                           <Grid
                             key={"0"}
@@ -1561,7 +1564,7 @@ class Drugintscreen extends React.Component {
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
                                   {...params}
-                                  label={"label"}
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -1572,6 +1575,7 @@ class Drugintscreen extends React.Component {
                       <Grid
                         key={"4"}
                         id={"nL5qY"}
+                        spacing={"1"}
                         container={true}
                         direction={"row"}
                         justifyContent={"center"}
@@ -1582,7 +1586,6 @@ class Drugintscreen extends React.Component {
                         sm={"5"}
                         xl={"4"}
                         xs={"5"}
-                        spacing={""}
                         style={qdmstyles.FkohN}
                       >
                         <Grid
@@ -1840,10 +1843,14 @@ class Drugintscreen extends React.Component {
                         },
                       ]}
                       style={qdmstyles.aWOWA}
-                    ></MuiTab>
+                    >
+                     
+                    </MuiTab>
+                   
                   </Paper>
                 </Grid>
               </Grid>
+              
               <Grid
                 key={"3"}
                 id={"QmXa7"}
