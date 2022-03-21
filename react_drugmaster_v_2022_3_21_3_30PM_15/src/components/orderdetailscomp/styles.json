@@ -15,7 +15,8 @@
     "paddingTop": "8px",
     "paddingBottomValue": "8",
     "paddingBottomType": "px",
-    "paddingBottom": "8px"
+    "paddingBottom": "8px",
+    "margin":"16px 0 12px 0"
   },
   "ixFX": {
     "marginValue": "",
@@ -93,7 +94,7 @@
     "marginTop": "px",
     "marginBottomValue": "12",
     "marginBottomType": "px",
-    "marginBottom": "12px"
+    "margin":"16px 0 12px 0"
   },
   "JzD": {
     "color": "#001C3C",
@@ -481,10 +482,8 @@
     "textTransform": "capitalize",
     "widthValue": "65",
     "widthType": "px",
-    "width": "65px",
     "heightValue": "40",
     "heightType": "px",
-    "height": "40px",
     "borderRadius": "8px"
   },
   "TZfNs": {},

@@ -1055,7 +1055,7 @@ class Drugintscreen extends React.Component {
                           id={"CompondAddnewButton_button"}
                           variant={"text"}
                           color={"primary"}
-                          children={"+Add New"}
+                          children={"+ Add New"}
                           aliasName={"CompondAddnewButton"}
                           style={qdmstyles.wsy}
                         ></Button>
