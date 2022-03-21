@@ -140,7 +140,9 @@
     "width": "14px",
     "heightValue": "14",
     "heightType": "px",
-    "height": "14px"
+    "height": "14px",
+    "cursor":"pointer"
+
   },
   "pvGla": { "display": "" },
   "fWwA": {
@@ -160,6 +162,74 @@
     "width": "16px",
     "heightValue": "16",
     "heightType": "px",
-    "height": "16px"
-  }
+    "height": "16px",
+    "cursor":"pointer"
+  },"ZEBo": {},
+  "ZHs": {},
+  "pCtsN": { "paddingValue": "20", "paddingType": "px" },
+  "pFEL": {},
+  "YMRQ": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "margin": "16px 16px 8px 16px"
+  },
+  "ZHH": {},
+  "qnl": {
+    "color": "#101010",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px",
+    "fontWeight": "600",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "WDf": { "display": "flex", "justifyContent": "flex-end" },
+  "csnok": {
+    "widthValue": "26",
+    "widthType": "px",
+    "width": "26px",
+    "heightValue": "26",
+    "heightType": "px",
+    "height": "26px"
+  },
+  "PLePk": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "marginTop": "10px"
+  },
+  "uBU": {},
+  "TxTu": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "marginTop": "10px"
+  },
+  "oEUGh": {},
+  "pYPX": {},
+  "SmqN": {},
+  "UnAb": { "color": "#6A7888" },
+  "wAv": {},
+  "GFYVy": { "color": "#6A7888" },
+  "eEz": { "display": "inline-flex","margin":"8px 16px " },
+  "yFDe": {},
+  "ALLi": {},
+  "YKtx": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "YBla": {
+    "widthValue": "",
+    "widthType": "px",
+    "width": "px",
+    "fontSizeValue": "30",
+    "fontSizeType": "px",
+    "fontSize": "30px",
+    "color":"#6A7888"
+  },
+  "xTaHq": {},
+  "Djrof": {}
 }

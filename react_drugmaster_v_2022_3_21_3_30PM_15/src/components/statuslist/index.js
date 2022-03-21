@@ -73,7 +73,7 @@ function Statuslist(props) {
             sm={"12"}
             xl={"12"}
             xs={"12"}
-            spacing={"2"}
+            spacing={"1"}
             style={qdmstyles.NVcG}
           >
             <Grid
