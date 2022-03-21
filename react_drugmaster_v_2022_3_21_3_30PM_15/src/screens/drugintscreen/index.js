@@ -351,9 +351,9 @@ class Drugintscreen extends React.Component {
                               size={"small"}
                               renderInput={(params) => (
                                 <ALLMCORE.TextField
-                                size={"small"}
+                                  size={"small"}
                                   {...params}
-                                placeholder="label"
+                                  placeholder="label"
                                   variant="outlined"
                                 />
                               )}
@@ -1703,6 +1703,8 @@ class Drugintscreen extends React.Component {
                     style={qdmstyles.VIak}
                   >
                     <MuiTab
+                      selectedTabColor="#2A60BC"
+                      indicatorColor="#2A60BC"
                       key={"0"}
                       id={"aWOWA"}
                       varient={"scrollable"}

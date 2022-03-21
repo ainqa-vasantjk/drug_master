@@ -83,7 +83,7 @@
     "marginBottomType": "px",
     "marginBottom": "4px"
   },
-  "FxFNF": { "backgroundColor": "#DEE5EC", "borderRadius": "8px" },
+  "FxFNF": { "backgroundColor": "#DEE5EC"},
   "husub": {
     "marginRightValue": "",
     "marginRightType": "px",
@@ -114,7 +114,7 @@
     "marginBottomType": "px",
     "marginBottom": "4px"
   },
-  "WvQI": { "backgroundColor": "#DEE5EC", "borderRadius": "8px" },
+  "WvQI": { "backgroundColor": "#DEE5EC"},
   "GSZZ": {
     "marginRightValue": "",
     "marginRightType": "px",

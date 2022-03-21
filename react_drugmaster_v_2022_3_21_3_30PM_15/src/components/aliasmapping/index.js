@@ -273,7 +273,7 @@ function Aliasmapping(props) {
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            label={"label"}
+                            label={""}
                             variant="outlined"
                           />
                         )}
