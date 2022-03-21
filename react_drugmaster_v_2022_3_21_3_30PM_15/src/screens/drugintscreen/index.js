@@ -425,7 +425,7 @@ class Drugintscreen extends React.Component {
                               variant={"outlined"}
                               size={"small"}
                               fullWidth={true}
-                              margin={"dense"}
+                              
                               aliasName={"drugcodevalue"}
                               style={qdmstyles.Yfc}
                             ></TextField>
@@ -497,7 +497,7 @@ class Drugintscreen extends React.Component {
                               size={"small"}
                               aliasName={"InputofShortDescription"}
                               fullWidth={true}
-                              margin={"dense"}
+                             
                               style={qdmstyles.gbQzl}
                             ></TextField>
                           </Grid>
@@ -568,7 +568,7 @@ class Drugintscreen extends React.Component {
                               size={"small"}
                               aliasName={"InputofLongDescription"}
                               fullWidth={true}
-                              margin={"dense"}
+                           
                               style={qdmstyles.rpidP}
                             ></TextField>
                           </Grid>
