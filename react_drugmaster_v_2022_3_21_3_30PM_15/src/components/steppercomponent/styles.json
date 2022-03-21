@@ -37,7 +37,9 @@
     "textTransform": "capitalize",
     "letterSpacingValue": "0",
     "letterSpacingType": "px",
-    "letterSpacing": "0px"
+    "letterSpacing": "0px",
+    "paddingLeft":"10px",
+    "paddingRight":"10px"
   },
   "qqNI": {},
   "PzLi": {},

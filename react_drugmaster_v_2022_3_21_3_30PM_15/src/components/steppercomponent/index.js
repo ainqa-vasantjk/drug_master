@@ -82,14 +82,15 @@ function Steppercomponent(props) {
                 id={"mAG6q"}
                 container={""}
                 direction={"row"}
-                justifyContent={"center"}
+                justifyContent={"flex-start"}
                 alignItems={"center"}
-                lg={1}
-                md={1}
-                sm={1}
-                xl={1}
-                xs={1}
+                lg={9}
+                md={9}
+                sm={9}
+                xl={9}
+                xs={9}
                 item={true}
+                style={{display:"flex"}}
               >
                 <Paper
                   key={"0"}
@@ -108,22 +109,8 @@ function Steppercomponent(props) {
                     style={qdmstyles.HkVSt}
                   ></Avatar>
                 </Paper>
-              </Grid>
-              <Grid
-                key={"1"}
-                id={"add_new_drug_catalog_masterheader"}
-                container={""}
-                direction={"row"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                lg={"3"}
-                item={true}
-                md={"3"}
-                sm={"3"}
-                xl={"3"}
-                xs={"3"}
-                aliasName={"addnewdrugcatalogmasterheader"}
-              >
+             
+            
                 <Typography
                   key={"0"}
                   id={"yf8Th"}
@@ -134,22 +121,8 @@ function Steppercomponent(props) {
                   children={"Add New Drug catalog master"}
                   style={qdmstyles.LP}
                 ></Typography>
-              </Grid>
-              <Grid
-                key={"2"}
-                id={"oFnT0"}
-                container={""}
-                direction={"row"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                lg={"5"}
-                md={"5"}
-                sm={"5"}
-                xl={"5"}
-                xs={"5"}
-                item={true}
-                style={qdmstyles.stp}
-              >
+              
+             
                 <MuiStepper
                   key={"0"}
                   id={"ifdFf"}
