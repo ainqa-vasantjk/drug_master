@@ -15,8 +15,7 @@
     "paddingTop": "8px",
     "paddingBottomValue": "8",
     "paddingBottomType": "px",
-    "paddingBottom": "8px",
-    "margin":"16px 0 12px 0"
+    "paddingBottom": "8px"
   },
   "ixFX": {
     "marginValue": "",
@@ -193,10 +192,10 @@
     "paddingRight": "2px",
     "marginBottomValue": "0",
     "marginBottomType": "px",
-    "marginBottom": "0px",
     "paddingBottomValue": "0",
     "paddingBottomType": "px",
-    "paddingBottom": "0px"
+    "paddingBottom": "0px",
+    "marginBottom":"0px"
   },
   "CBPgO": {
     "marginTopValue": "10",

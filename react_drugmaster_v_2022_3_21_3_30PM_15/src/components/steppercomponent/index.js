@@ -12,7 +12,14 @@ import cookie from "react-cookies";
 import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
 import * as ALL from "../../components";
 import { Modal } from "qdm-component-library";
-import { Grid, Paper, Avatar, Typography, Button } from "@material-ui/core";
+import {
+  Grid,
+  Paper,
+  Avatar,
+  Typography,
+  Button,
+  Divider,
+} from "@material-ui/core";
 import { MuiStepper } from "custom-material-ui-component";
 
 import qdmstyles from "./styles.json";
@@ -113,6 +120,7 @@ function Steppercomponent(props) {
                     style={{ placeSelf: "center" }}
                   />
                 </Paper>
+
                 <Typography
                   key={"0"}
                   id={"yf8Th"}
@@ -123,7 +131,11 @@ function Steppercomponent(props) {
                   children={"Add New Drug catalog master"}
                   style={qdmstyles.LP}
                 ></Typography>
-
+                <Divider
+                  orientation="vertical"
+                  flexItem
+                  style={{ margin: "20px 0" }}
+                />
                 <MuiStepper
                   key={"3"}
                   onChange={(e) => this.onchange_8mjav(e)}

@@ -9,7 +9,6 @@ export * from "./alert";
 export { default as Drugotherattributes } from "./drugotherattributes";
 export { default as Capsule } from "./capsule";
 export { default as Availablestrengthtableheader } from "./availablestrengthtableheader";
-export { default as Orderdefault } from "./orderdefault";
 export { default as Availablestrengthtablevalue } from "./availablestrengthtablevalue";
 export { default as Availablestrengthtabcomp } from "./availablestrengthtabcomp";
 export { default as Availabletabcomp } from "./availabletabcomp";

@@ -25,7 +25,7 @@ import {
   TextField,
 } from "@material-ui/core";
 import { CustRowTable } from "custom-material-ui-component";
-
+import Order from "./purchase-order-icon.svg";
 import qdmstyles from "./styles.json";
 import "./index.css";
 var aes256 = require("aes256");
@@ -68,7 +68,6 @@ class Alertrestriction extends React.Component {
       <NamespacesConsumer>
         {(t, { i18n }) => (
           <React.Fragment>
-          
             <Paper
               key={"0"}
               id={"upUMw"}
@@ -359,17 +358,6 @@ class Alertrestriction extends React.Component {
                             component={"div"}
                             style={qdmstyles.lqU}
                           >
-                            <Avatar
-                              key={"0"}
-                              id={"patient_criteria_add_new_rule_set_icon"}
-                              alt={"Avatar"}
-                              variant={"rounded"}
-                              src={
-                                "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
-                              }
-                              aliasName={"patientcriteriaaddnewruleseticon"}
-                              style={qdmstyles.BJdP}
-                            ></Avatar>
                             <Button
                               key={"1"}
                               id={"patient_criteria_add_new_rule_set_button"}
@@ -379,6 +367,19 @@ class Alertrestriction extends React.Component {
                               aliasName={"patientcriteriaaddnewrulesetbutton"}
                               style={qdmstyles.Wfr}
                               size={"small"}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={"patient_criteria_add_new_rule_set_icon"}
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={
+                                    "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
+                                  }
+                                  aliasName={"patientcriteriaaddnewruleseticon"}
+                                  style={qdmstyles.BJdP}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Box>
                           <Typography
@@ -398,19 +399,6 @@ class Alertrestriction extends React.Component {
                             component={"div"}
                             style={qdmstyles.evHRC}
                           >
-                            <Avatar
-                              key={"0"}
-                              id={"patient_criteria_add_existing_rule_set_icon"}
-                              alt={"Avatar"}
-                              variant={"rounded"}
-                              src={
-                                "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
-                              }
-                              aliasName={
-                                "patientcriteriaaddexistingruleseticon"
-                              }
-                              style={qdmstyles.HRISB}
-                            ></Avatar>
                             <Button
                               key={"1"}
                               id={
@@ -424,6 +412,21 @@ class Alertrestriction extends React.Component {
                               }
                               style={qdmstyles.Sp}
                               size={"small"}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={
+                                    "patient_criteria_add_existing_rule_set_icon"
+                                  }
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={Order}
+                                  aliasName={
+                                    "patientcriteriaaddexistingruleseticon"
+                                  }
+                                  style={qdmstyles.HRISB}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Box>
                         </Grid>
@@ -463,19 +466,6 @@ class Alertrestriction extends React.Component {
                             component={"div"}
                             style={qdmstyles.QMGQP}
                           >
-                            <Avatar
-                              key={"0"}
-                              id={"practitioner_criteria_add_new_rule_set_icon"}
-                              alt={"Avatar"}
-                              variant={"rounded"}
-                              src={
-                                "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
-                              }
-                              aliasName={
-                                "practitionercriteriaaddnewruleseticon"
-                              }
-                              style={qdmstyles.vrnaN}
-                            ></Avatar>
                             <Button
                               key={"1"}
                               id={
@@ -489,6 +479,23 @@ class Alertrestriction extends React.Component {
                               }
                               style={qdmstyles.tIdq}
                               size={"small"}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={
+                                    "practitioner_criteria_add_new_rule_set_icon"
+                                  }
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={
+                                    "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
+                                  }
+                                  aliasName={
+                                    "practitionercriteriaaddnewruleseticon"
+                                  }
+                                  style={qdmstyles.vrnaN}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Box>
                           <Typography
@@ -508,21 +515,6 @@ class Alertrestriction extends React.Component {
                             component={"div"}
                             style={qdmstyles.coT}
                           >
-                            <Avatar
-                              key={"0"}
-                              id={
-                                "practitioner_criteria_add_existing_rule_set_icon"
-                              }
-                              alt={"Avatar"}
-                              variant={"rounded"}
-                              src={
-                                "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
-                              }
-                              aliasName={
-                                "practitionercriteriaaddexistingruleseticon"
-                              }
-                              style={qdmstyles.pnvtr}
-                            ></Avatar>
                             <Button
                               key={"1"}
                               id={
@@ -536,6 +528,21 @@ class Alertrestriction extends React.Component {
                               }
                               style={qdmstyles.eUuJA}
                               size={"small"}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={
+                                    "practitioner_criteria_add_existing_rule_set_icon"
+                                  }
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={Order}
+                                  aliasName={
+                                    "practitionercriteriaaddexistingruleseticon"
+                                  }
+                                  style={qdmstyles.pnvtr}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Box>
                         </Grid>

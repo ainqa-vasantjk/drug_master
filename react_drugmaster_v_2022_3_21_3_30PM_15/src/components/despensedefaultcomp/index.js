@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Config from "../../config";
 import * as ALLMCORE from "@material-ui/core";
 import cookie from "react-cookies";
-
+import Order from "./purchase-order-icon.svg";
 import * as ALL from "../../components";
 import { Modal } from "qdm-component-library";
 import {
@@ -215,6 +215,19 @@ function Despensedefaultcomp(props) {
                               children={"Add New Rule Set"}
                               aliasName={"addNewRuleSetButton"}
                               style={qdmstyles.FoTd}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={"patient_criteria_add_new_rule_set_icon"}
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={
+                                    "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325667675"
+                                  }
+                                  aliasName={"patientcriteriaaddnewruleseticon"}
+                                  style={{ height: "16px", width: "16px" }}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Grid>
                           <Grid
@@ -255,6 +268,17 @@ function Despensedefaultcomp(props) {
                               children={"Add Existing Rule Set"}
                               aliasName={"addExistingRuleSetbutton"}
                               style={qdmstyles.SVdEr}
+                              startIcon={
+                                <Avatar
+                                  key={"0"}
+                                  id={"patient_criteria_add_new_rule_set_icon"}
+                                  alt={"Avatar"}
+                                  variant={"rounded"}
+                                  src={Order}
+                                  aliasName={"patientcriteriaaddnewruleseticon"}
+                                  style={{ height: "16px", width: "16px" }}
+                                ></Avatar>
+                              }
                             ></Button>
                           </Grid>
                         </Grid>

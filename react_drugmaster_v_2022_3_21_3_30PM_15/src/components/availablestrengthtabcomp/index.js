@@ -119,7 +119,7 @@ function Availablestrengthtabcomp(props) {
                   sm={"12"}
                   xl={"12"}
                   xs={"12"}
-                  style={{ margin: "17px 0 9px 0" }}
+                  style={{ margin: "0 0 9px 0" }}
                 >
                   <Grid
                     key={"0"}
