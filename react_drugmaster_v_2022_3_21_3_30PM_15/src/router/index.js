@@ -9,7 +9,6 @@ import {
   Alertrestriction,
   Drugcompound,
   Test,
-  Status,
   Drugmastertable,
 } from "./../screens";
 
