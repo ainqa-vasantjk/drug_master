@@ -12,7 +12,7 @@ import cookie from "react-cookies";
 
 import * as ALL from "../../components";
 import * as ALLMCORE from "@material-ui/core";
-
+import { withStyles } from "@material-ui/core/styles";
 import { Modal } from "qdm-component-library";
 
 import {
@@ -28,10 +28,29 @@ import {
 import { ComponentRender, MuiTab } from "custom-material-ui-component";
 
 import { Autocomplete } from "@material-ui/lab";
-
+import { makeStyles } from "@material-ui/core/styles";
 import qdmstyles from "./styles.json";
 import "./index.css";
 var aes256 = require("aes256");
+
+
+const useStyles = ()=> ({
+  auto: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopRightRadius: "8px",
+      borderBottomRightRadius: "8px",
+      borderTopLeftRadius: "0px",
+      borderBottomLeftRadius: "0px",
+    },
+  },
+  textbor: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopLeftRadius: "8px",
+      borderBottomLeftRadius: "8px",
+      borderTopRightRadius: "0px",
+      borderBottomRightRadius: "0px",
+    },
+    }});
 
 class Drugintscreen extends React.Component {
   static contextType = LoggerContext;
@@ -68,6 +87,7 @@ class Drugintscreen extends React.Component {
   }
 
   render() {
+    const classes = useStyles();
     console.log("value", this.state.showStatuspage);
     return (
       <NamespacesConsumer>
@@ -1427,7 +1447,7 @@ class Drugintscreen extends React.Component {
                           sm={"12"}
                           xl={"12"}
                           xs={"12"}
-                          spacing={"1"}
+                          // spacing={"1"}
                         >
                           <Grid
                             key={"0"}
@@ -1444,6 +1464,7 @@ class Drugintscreen extends React.Component {
                             xs={"6"}
                           >
                             <TextField
+                              className={classes.auto}
                               key={"0"}
                               id={"p4SrD"}
                               label={""}
@@ -1504,7 +1525,7 @@ class Drugintscreen extends React.Component {
                           sm={"12"}
                           xl={"12"}
                           xs={"12"}
-                          spacing={"1"}
+                         
                         >
                           <Grid
                             key={"0"}
@@ -2268,7 +2289,7 @@ class Drugintscreen extends React.Component {
 }
 const mapStateToProps = (state) => ({});
 
-export default connect(
+export default  connect(
   mapStateToProps,
   actions
 )(withRouter(translate()(Drugintscreen)));

@@ -652,7 +652,7 @@
     "borderColor": "",
     "borderWidth": "",
     "borderStyle": "",
-    "borderRadius": "",
+    "borderRadius": "8px",
     "backgroundColor": "#DEE5EC"
   },
   "EGes": {},
@@ -660,7 +660,7 @@
     "borderColor": "",
     "borderWidth": "",
     "borderStyle": "",
-    "borderRadius": "",
+    "borderRadius": "8px",
     "backgroundColor": "#DEE5EC"
   },
   "PtPRI": {},
@@ -679,7 +679,7 @@
     "borderColor": "",
     "borderWidth": "",
     "borderStyle": "",
-    "borderRadius": "",
+    "borderRadius": "8px",
     "backgroundColor": "#DEE5EC"
   },
   "kivs": {},
@@ -687,7 +687,7 @@
     "borderColor": "",
     "borderWidth": "",
     "borderStyle": "",
-    "borderRadius": "",
+    "borderRadius": "8px",
     "backgroundColor": "#DEE5EC"
   },
   "IoIX": {},

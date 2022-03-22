@@ -26,12 +26,32 @@ import {
 import { Autocomplete } from "@material-ui/lab";
 import qdmstyles from "./styles.json";
 import "./index.css";
+import { makeStyles } from "@material-ui/core/styles";
 var aes256 = require("aes256");
+const useStyles = makeStyles({
+  auto: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopRightRadius: "8px",
+      borderBottomRightRadius: "8px",
+      borderTopLeftRadius: "0px",
+      borderBottomLeftRadius: "0px",
+    },
+  },
+  textbor: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopLeftRadius: "8px",
+      borderBottomLeftRadius: "8px",
+      borderTopRightRadius: "0px",
+      borderBottomRightRadius: "0px",
+    },
+  },
+});
 
 function Despensedefaultcomp(props) {
   const dispatch = useDispatch();
 
   const contextType = React.useContext(LoggerContext);
+  const classes = useStyles();
   const [state, setState] = React.useState({
     permissionData: null,
   });
@@ -237,6 +257,7 @@ function Despensedefaultcomp(props) {
                             direction={"row"}
                             justifyContent={"center"}
                             alignItems={"center"}
+                            style={{padding:"0px 10px"}}
                           >
                             <Typography
                               key={"0"}
@@ -403,6 +424,7 @@ function Despensedefaultcomp(props) {
                             xs={"6"}
                           >
                             <TextField
+                            className={classes.textbor}
                               key={"0"}
                               id={"defaultDispenseDuration&Uominput"}
                               label={""}
@@ -432,6 +454,7 @@ function Despensedefaultcomp(props) {
                             md={"6"}
                           >
                             <Autocomplete
+                            className={classes.auto}
                               id={"Lxtmr"}
                               style={qdmstyles?.Lxtmr}
                               value={state?.despensedefaultcomp_lxtmr ?? null}
@@ -525,6 +548,7 @@ function Despensedefaultcomp(props) {
                             xs={"6"}
                           >
                             <TextField
+                             className={classes.textbor}
                               key={"0"}
                               id={"maxdispdurationval&Uom_Textfield"}
                               label={""}
@@ -554,6 +578,7 @@ function Despensedefaultcomp(props) {
                             md={"6"}
                           >
                             <Autocomplete
+                             className={classes.auto}
                               id={"OXRzD"}
                               style={qdmstyles?.OXRzD}
                               value={state?.despensedefaultcomp_oxrzd ?? null}
