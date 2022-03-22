@@ -1,0 +1,235 @@
+{
+  "CVTdo": {},
+  "DuTO": {},
+  "DBqDA": {
+    "borderRadius": "",
+    "backgroundColor": "",
+    "paddingValue": "",
+    "paddingType": "px",
+    "padding": "px",
+    "paddingTopValue": "7",
+    "paddingTopType": "px",
+    "paddingTop": "7px",
+    "paddingBottomValue": "3",
+    "paddingBottomType": "px",
+    "paddingBottom": "3px",
+    "paddingLeftValue": "10",
+    "paddingLeftType": "px",
+    "paddingLeft": "10px",
+    "paddingRightValue": "10",
+    "paddingRightType": "px",
+    "paddingRight": "10px"
+  },
+  "JHLl": {},
+  "MzG": {
+    "marginTopValue": "12",
+    "marginTopType": "px",
+    "marginTop": "12px",
+    "marginBottomValue": "9",
+    "marginBottomType": "px",
+    "marginBottom": "9px",
+    "marginLeftValue": "",
+    "marginLeftType": "px",
+    "marginLeft": "px",
+    "marginRightValue": "",
+    "marginRightType": "px",
+    "marginRight": "px"
+  },
+  "VAOQU": {
+    "display": "flex",
+    "justifyContent": "flex-start",
+    "alignItems": "center"
+  },
+  "bzWxP": {
+    "color": "#2A3C50",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px"
+  },
+  "Wfj": {
+    "paddingValue": "",
+    "paddingType": "px",
+    "padding": "px",
+    "marginValue": "",
+    "marginType": "px",
+    "margin": "px",
+    "display": "flex",
+    "justifyContent": "flex-start",
+    "alignItems": "center"
+  },
+  "cHPhn": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px",
+    "marginValue": "",
+    "marginType": "px",
+    "margin": "px",
+    "paddingValue": "",
+    "paddingType": "px",
+    "padding": "px"
+  },
+  "OwDvC": {},
+  "cMNw": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "pybL": {},
+  "GBTG": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "gmzvP": {},
+  "MSx": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "hnVa": {},
+  "rDsyW": {
+    "color": "#2A3C50",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "21",
+    "lineHeightType": "px",
+    "lineHeight": "21px",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "HLu": { "color": "#6A7888" },
+  "PnsL": {
+    "widthValue": "14",
+    "widthType": "px",
+    "width": "14px",
+    "heightValue": "14",
+    "heightType": "px",
+    "height": "14px",
+    "cursor":"pointer"
+
+  },
+  "pvGla": { "display": "" },
+  "fWwA": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "bXGoC": {},
+  "qkKXh": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "zrlt": {
+    "widthValue": "16",
+    "widthType": "px",
+    "width": "16px",
+    "heightValue": "16",
+    "heightType": "px",
+    "height": "16px",
+    "cursor":"pointer"
+  },"ZEBo": {},
+  "ZHs": {},
+  "pCtsN": { "paddingValue": "20", "paddingType": "px" },
+  "pFEL": {},
+  "YMRQ": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "margin": "16px 16px 8px 16px"
+  },
+  "ZHH": {},
+  "qnl": {
+    "color": "#101010",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px",
+    "fontWeight": "600",
+    "letterSpacingValue": "0",
+    "letterSpacingType": "px",
+    "letterSpacing": "0px"
+  },
+  "WDf": { "display": "flex", "justifyContent": "flex-end" },
+  "csnok": {
+    "widthValue": "26",
+    "widthType": "px",
+    "width": "26px",
+    "heightValue": "26",
+    "heightType": "px",
+    "height": "26px"
+  },
+  "PLePk": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "marginTop": "10px"
+  },
+  "uBU": {},
+  "TxTu": {
+    "marginTopValue": "10",
+    "marginTopType": "px",
+    "marginTop": "10px"
+  },
+  "oEUGh": {},
+  "pYPX": {},
+  "SmqN": {},
+  "UnAb": { "color": "#6A7888","fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
+  "wAv": {},
+  "GFYVy": { "color": "#6A7888","fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
+  "eEz": { "display": "inline-flex","margin":"8px 16px " },
+  "yFDe": {},
+  "ALLi": {},
+  "YKtx": {
+    "display": "flex",
+    "justifyContent": "center",
+    "alignItems": "center"
+  },
+  "YBla": {
+    "widthValue": "",
+    "widthType": "px",
+    "width": "px",
+    "fontSizeValue": "30",
+    "fontSizeType": "px",
+    "fontSize": "30px",
+    "color":"#6A7888"
+  },
+  "xTaHq": {},
+  "Djrof": {}
+}

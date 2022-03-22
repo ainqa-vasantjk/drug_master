@@ -1,0 +1,43 @@
+{
+  "UYSha": {
+    "backgroundColor": "#f1f6fc",
+    "paddingValue": "10",
+    "paddingType": "px",
+    "padding": "10px",
+    "borderRadius": "8px 8px 0px 0px",
+    "borderColor": "#DEE5EC",
+    "borderWidth": "1px",
+    "borderStyle": "solid"
+  },
+  "kLv": {},
+  "cmq": {
+    "color": "#6A7888",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px"
+  },
+  "XTsif": {},
+  "PsUC": {
+    "color": "#6A7888",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px",
+    "textAlign": "left"
+  },
+  "SIIq": {},
+  "Qzi": {
+    "color": "#6A7888",
+    "fontSizeValue": "14",
+    "fontSizeType": "px",
+    "fontSize": "14px",
+    "lineHeightValue": "20",
+    "lineHeightType": "px",
+    "lineHeight": "20px"
+  }
+}
