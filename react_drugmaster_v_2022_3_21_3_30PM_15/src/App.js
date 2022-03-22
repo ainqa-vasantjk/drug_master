@@ -17,7 +17,7 @@ import RouterApp from "./router";
 import AppLogger from "./App.logger";
 import { store as ReduxStore } from "./redux";
 import { Provider } from "react-redux";
-
+import "./index.css";
 // import { CssBaseline } from "@material-ui/core";
 // import AppDialog from "./App.dialog";
 // import AppBackdrop from "./App.backdrop";

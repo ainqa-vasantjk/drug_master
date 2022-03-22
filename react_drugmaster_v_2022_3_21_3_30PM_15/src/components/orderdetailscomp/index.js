@@ -25,7 +25,28 @@ import {
 import { Autocomplete } from "@material-ui/lab";
 import qdmstyles from "./styles.json";
 import "./index.css";
+import { makeStyles } from "@material-ui/core/styles";
+import "./index.css";
 var aes256 = require("aes256");
+
+const useStyles = makeStyles({
+  auto: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopRightRadius: "8px",
+      borderBottomRightRadius: "8px",
+      borderTopLeftRadius: "0px",
+      borderBottomLeftRadius: "0px",
+    },
+  },
+  textbor: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderTopLeftRadius: "8px",
+      borderBottomLeftRadius: "8px",
+      borderTopRightRadius: "0px",
+      borderBottomRightRadius: "0px",
+    },
+  },
+});
 
 function Orderdetailscomp(props) {
   const dispatch = useDispatch();
@@ -58,7 +79,7 @@ function Orderdetailscomp(props) {
   React.useEffect(() => {}, [state]);
 
   const { data, index } = props;
-
+  const classes = useStyles();
   return (
     <NamespacesConsumer>
       {(t, { i18n }) => (
@@ -644,6 +665,7 @@ function Orderdetailscomp(props) {
                                 style={qdmstyles.JGib}
                               >
                                 <TextField
+                                  className={classes.textbor}
                                   key={"0"}
                                   id={"KOrzv"}
                                   label={""}
@@ -679,6 +701,7 @@ function Orderdetailscomp(props) {
                               >
                                 <Autocomplete
                                   id={"4hHRU"}
+                                  className={classes.auto}
                                   style={qdmstyles?.hHRU}
                                   value={state?.orderdetailscomp_4hhru ?? null}
                                   onLoad={() =>
@@ -755,6 +778,7 @@ function Orderdetailscomp(props) {
                                 style={qdmstyles.PO}
                               >
                                 <TextField
+                                  className={classes.textbor}
                                   key={"0"}
                                   id={"KOrzv"}
                                   label={""}
@@ -789,6 +813,7 @@ function Orderdetailscomp(props) {
                               >
                                 <Autocomplete
                                   id={"N4cBF"}
+                                  className={classes.auto}
                                   style={qdmstyles?.NcBF}
                                   value={state?.orderdetailscomp_n4cbf ?? null}
                                   onLoad={() =>
@@ -865,6 +890,7 @@ function Orderdetailscomp(props) {
                                 style={qdmstyles.yfdK}
                               >
                                 <TextField
+                                  className={classes.textbor}
                                   key={"0"}
                                   id={"KOrzv"}
                                   label={""}
@@ -899,6 +925,7 @@ function Orderdetailscomp(props) {
                               >
                                 <Autocomplete
                                   id={"dbedu"}
+                                  className={classes.auto}
                                   style={qdmstyles?.dbedu}
                                   value={state?.orderdetailscomp_dbedu ?? null}
                                   onLoad={() =>
@@ -975,6 +1002,7 @@ function Orderdetailscomp(props) {
                                 style={qdmstyles.yFOl}
                               >
                                 <TextField
+                                  className={classes.textbor}
                                   key={"0"}
                                   id={"KOrzv"}
                                   label={""}
@@ -1009,6 +1037,7 @@ function Orderdetailscomp(props) {
                               >
                                 <Autocomplete
                                   id={"Ase2R"}
+                                  className={classes.auto}
                                   style={qdmstyles?.AseR}
                                   value={state?.orderdetailscomp_ase2r ?? null}
                                   onLoad={() =>

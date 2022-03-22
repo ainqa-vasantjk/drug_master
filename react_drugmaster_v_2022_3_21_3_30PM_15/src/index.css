@@ -75,3 +75,7 @@ input, select, textarea{
 :fullscreen{
   z-index: 5;
 }
+
+.MuiOutlinedInput-root{
+  border-radius: 8px !important; 
+}

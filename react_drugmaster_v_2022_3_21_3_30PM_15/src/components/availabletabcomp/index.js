@@ -16,8 +16,17 @@ import { Grid, Paper, Typography, Divider } from "@material-ui/core";
 
 import { Autocomplete } from "@material-ui/lab";
 import qdmstyles from "./styles.json";
+import { makeStyles } from "@material-ui/core/styles";
 import "./index.css";
 var aes256 = require("aes256");
+
+const useStyles = makeStyles({
+  root: {
+    "& .MuiOutlinedInput-notchedOutline": {
+      border: "none",
+    },
+  },
+});
 
 function Availabletabcomp(props) {
   const dispatch = useDispatch();
@@ -50,7 +59,7 @@ function Availabletabcomp(props) {
   React.useEffect(() => {}, [state]);
 
   const { data, index } = props;
-
+  const classes = useStyles();
   return (
     <NamespacesConsumer>
       {(t, { i18n }) => (
@@ -137,6 +146,7 @@ function Availabletabcomp(props) {
                   item={true}
                 >
                   <Autocomplete
+                    className={classes.root}
                     id={"mNi4e"}
                     style={qdmstyles?.mNie}
                     value={state?.availabletabcomp_mni4e ?? null}
@@ -146,7 +156,7 @@ function Availabletabcomp(props) {
                           state?.availabletabcomp_mni4e ?? null,
                       })
                     }
-                    getOptionLabel={(option) => option?.["label"]}
+                    getOptionLabel={(option) => option?.[""]}
                     options={[] ?? []}
                     size={"small"}
                     renderInput={(params) => (
