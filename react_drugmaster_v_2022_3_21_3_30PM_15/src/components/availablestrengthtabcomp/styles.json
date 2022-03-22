@@ -83,9 +83,9 @@
   "IqiH": {},
   "nLFI": {},
   "XKKt": {},
-  "WQVX": { "color": "#6A7888" },
+  "WQVX": { "color": "#6A7888","fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
   "JZjoe": {},
-  "TIjFl": { "color": "#6A7888" },
+  "TIjFl": { "color": "#6A7888" ,"fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
   "qvoK": { "display": "inline-flex","margin": "8px 24px" },
   "UGDx": {},
   "lMca": {},
@@ -147,9 +147,9 @@
   "OfBU": {},
   "OMLO": {},
   "SVRz": {},
-  "xgTso": { "color": "#6A7888" },
+  "xgTso": { "color": "#6A7888" ,"fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
   "vnIrj": {},
-  "cruD": { "color": "#6A7888" },
+  "cruD": { "color": "#6A7888" ,"fontSize" :"12px","textTransform":"capitalize","lineHeight":"18px"},
   "WjqH": { "display": "inline-flex" ,"margin":"8px 24px"},
   "SRdsH": {},
   "azim": {},
@@ -185,7 +185,9 @@
     "marginRight": "10px",
     "color": "#2A60BC",
     "backgroundColor":"#F1F6FC",
-    "borderRadius":"8px"
+    "borderRadius":"8px",
+    "fontSize" :"14px","lineHeight":"21px",
+    "textTransform":"capitalize"
   },
   "CPPs": {
     "marginLeftValue": "10",
@@ -195,6 +197,7 @@
     "marginRightType": "px",
     "marginRight": "px",
     "backgroundColor": "#01205C",
-    "borderRadius": "8px"
+    "borderRadius": "8px",
+    "fontSize" :"16px","textTransform":"capitalize","lineHeight":"25px"
   }
 }

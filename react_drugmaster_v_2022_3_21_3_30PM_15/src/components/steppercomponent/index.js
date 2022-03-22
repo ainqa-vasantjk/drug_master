@@ -113,7 +113,6 @@ function Steppercomponent(props) {
                     style={{ placeSelf: "center" }}
                   />
                 </Paper>
-
                 <Typography
                   key={"0"}
                   id={"yf8Th"}
@@ -126,36 +125,31 @@ function Steppercomponent(props) {
                 ></Typography>
 
                 <MuiStepper
-                  key={"0"}
-                  id={"ifdFf"}
-                  style={qdmstyles.stppr}
+                  key={"3"}
+                  onChange={(e) => this.onchange_8mjav(e)}
+                  id={"8MJAV"}
                   value={""}
                   stepsHeader={[
                     {
                       header: "Drug master setup",
                       fullWidth: true,
-                      body: {
-                        component: true,
-                        componentName: "drugintscreencomp",
-                        componentId: "DKnmA",
-                      },
+                      body: {},
                     },
                     {
                       header: "Alerts and Restrictions",
                       fullWidth: true,
-                      body: {
-                        component: true,
-                        componentName: "alertscreencomp",
-                        componentId: "93i7O",
-                      },
+                      body: {},
                     },
                   ]}
-                  stepperActiveTextColor={"green"}
-                  nextLabel={"save"}
-                  nextButtonBackground={"black"}
-                  previousButtonBackground={"daddad"}
-                  previousButtonTextColor={"cancel"}
-                  nextButtonTextColor={"blue"}
+                  bodyRequired={""}
+                  stepperActiveTextColor={"#2A60BC"}
+                  alternativeLabel={""}
+                  isControlleRequired={""}
+                  stepperActiveColor={"#2A60BC"}
+                  HeaderFontColor={"#2A60BC"}
+                  previousLabel={""}
+                  aliasName={"targetscreen"}
+                  style={qdmstyles.MJAV}
                 ></MuiStepper>
               </Grid>
               <Grid
