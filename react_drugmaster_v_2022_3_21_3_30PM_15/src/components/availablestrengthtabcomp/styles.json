@@ -41,9 +41,9 @@
   "ULAZ": {},
   "iUGPb": {},"Jrk": {},
   "LawiF": {},
-  "wQg": { "paddingValue": "20", "paddingType": "px", "padding": "20px" },
+  "wQg": { "paddingValue": "20", "paddingType": "px", "padding": "px" },
   "jRxPA": {},
-  "TnP": { "marginTopValue": "10", "marginTopType": "px", "marginTop": "10px" },
+  "TnP": { "marginTopValue": "10", "marginTopType": "px", "margin": "16px 16px 8px 16px" },
   "gFaev": {},
   "Orf": {
     "color": "#101010",
@@ -86,7 +86,7 @@
   "WQVX": { "color": "#6A7888" },
   "JZjoe": {},
   "TIjFl": { "color": "#6A7888" },
-  "qvoK": { "display": "inline-flex" },
+  "qvoK": { "display": "inline-flex","margin": "8px 24px" },
   "UGDx": {},
   "lMca": {},
   "ZeueI": {
@@ -100,17 +100,17 @@
     "width": "px",
     "fontSizeValue": "30",
     "fontSizeType": "px",
-    "fontSize": "30px"
+    "fontSize": "30px",
+    "color":"#6A7888"
   },
   "CtQUX": {},
   "dgGB": {},
   "luzoZ": {
     "marginLeftValue": "5",
     "marginLeftType": "px",
-    "marginLeft": "5px",
     "marginRightValue": "5",
-    "marginRightType": "px",
-    "marginRight": "5px"
+    "marginRightType": "px"
+
   },
   "QRuq": {},
   "KzFlK": {
@@ -150,7 +150,7 @@
   "xgTso": { "color": "#6A7888" },
   "vnIrj": {},
   "cruD": { "color": "#6A7888" },
-  "WjqH": { "display": "inline-flex" },
+  "WjqH": { "display": "inline-flex" ,"margin":"8px 24px"},
   "SRdsH": {},
   "azim": {},
   "GXq": {
@@ -164,7 +164,8 @@
     "width": "px",
     "fontSizeValue": "30",
     "fontSizeType": "px",
-    "fontSize": "30px"
+    "fontSize": "30px",
+    "color":"#6A7888"
   },
   "KNqG": {},
   "ldjB": {},
@@ -172,7 +173,8 @@
   "muwbQ": {
     "display": "flex",
     "justifyContent": "flex-end",
-    "alignItems": "center"
+    "alignItems": "center",
+    "margin":"24px 23px 16px 8px"
   },
   "Phme": {
     "marginLeftValue": "10",
@@ -181,7 +183,9 @@
     "marginRightValue": "10",
     "marginRightType": "px",
     "marginRight": "10px",
-    "color": "#2A60BC"
+    "color": "#2A60BC",
+    "backgroundColor":"#F1F6FC",
+    "borderRadius":"8px"
   },
   "CPPs": {
     "marginLeftValue": "10",

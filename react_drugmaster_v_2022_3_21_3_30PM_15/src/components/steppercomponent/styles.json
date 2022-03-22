@@ -10,9 +10,7 @@
     "heightValue": "34",
     "heightType": "px",
     "height": "34px",
-    "display": "flex",
-    "justifyContent": "center",
-    "alignItems": "center"
+    "display": "grid"
   },
   "stpp":{"margin":"0px 18px"},
  
