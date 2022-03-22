@@ -34,7 +34,7 @@ import "./index.css";
 var aes256 = require("aes256");
 
 
-const useStyles = ()=> ({
+const Styles = (theme) => ({
   auto: {
     "& .MuiOutlinedInput-notchedOutline": {
       borderTopRightRadius: "8px",
@@ -87,7 +87,7 @@ class Drugintscreen extends React.Component {
   }
 
   render() {
-    const classes = useStyles();
+    const { classes } = this.props;
     console.log("value", this.state.showStatuspage);
     return (
       <NamespacesConsumer>
@@ -1464,7 +1464,7 @@ class Drugintscreen extends React.Component {
                             xs={"6"}
                           >
                             <TextField
-                              className={classes.auto}
+                              className={classes.textbor}
                               key={"0"}
                               id={"p4SrD"}
                               label={""}
@@ -1490,6 +1490,7 @@ class Drugintscreen extends React.Component {
                             xs={"6"}
                           >
                             <Autocomplete
+                             className={classes.auto}
                               id={"THJqP"}
                               style={qdmstyles?.THJqP}
                               value={this.state?.drugintscreen_thjqp ?? null}
@@ -1542,6 +1543,7 @@ class Drugintscreen extends React.Component {
                             xs={"6"}
                           >
                             <TextField
+                             className={classes.textbor}
                               key={"0"}
                               id={"p4SrD"}
                               label={""}
@@ -1567,6 +1569,7 @@ class Drugintscreen extends React.Component {
                             xs={"6"}
                           >
                             <Autocomplete
+                             className={classes.auto}
                               id={"6PdAe"}
                               style={qdmstyles?.PdAe}
                               value={this.state?.drugintscreen_6pdae ?? null}
@@ -2289,7 +2292,10 @@ class Drugintscreen extends React.Component {
 }
 const mapStateToProps = (state) => ({});
 
-export default  connect(
+export default connect(
+
   mapStateToProps,
+
   actions
-)(withRouter(translate()(Drugintscreen)));
+
+)(withRouter(withStyles(Styles)(translate()(Drugintscreen))));
