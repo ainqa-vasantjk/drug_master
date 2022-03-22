@@ -172,7 +172,7 @@ function Unitofmeasurecomp(props) {
                       renderInput={(params) => (
                         <ALLMCORE.TextField
                           {...params}
-                          label={"label"}
+                          placeholder="label"
                           variant="outlined"
                         />
                       )}
@@ -652,7 +652,7 @@ function Unitofmeasurecomp(props) {
                           renderInput={(params) => (
                             <ALLMCORE.TextField
                               {...params}
-                              label={"label"}
+                              placeholder="label"
                               variant="outlined"
                             />
                           )}
@@ -702,7 +702,7 @@ function Unitofmeasurecomp(props) {
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                placeholder="label"
                                 variant="outlined"
                               />
                             )}
@@ -807,7 +807,7 @@ function Unitofmeasurecomp(props) {
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                placeholder="label"
                                 variant="outlined"
                               />
                             )}
