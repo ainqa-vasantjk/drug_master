@@ -174,7 +174,8 @@
     "fontSize": "14px",
     "lineHeightValue": "20",
     "lineHeightType": "px",
-    "lineHeight": "20px"
+    "lineHeight": "20px",
+    "backgroundColor":"#F1F6FC"
   },
   "gqXak": {},
   "gtHeb": {},
@@ -200,7 +201,8 @@
     "fontSize": "14px",
     "lineHeightValue": "20",
     "lineHeightType": "px",
-    "lineHeight": "20px"
+    "lineHeight": "20px",
+    "backgroundColor":"#F1F6FC"
   },
   "KqxzH": {},
   "zIaSk": { "widthValue": "100", "widthType": "%", "width": "100%" },

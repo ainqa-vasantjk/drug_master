@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Config from "../../config";
 import * as ALLMCORE from "@material-ui/core";
 import cookie from "react-cookies";
-
+import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
 import * as ALL from "../../components";
 import { Modal } from "qdm-component-library";
 import { Grid, Paper, Avatar, Typography, Button } from "@material-ui/core";
@@ -90,7 +90,7 @@ function Steppercomponent(props) {
                 xl={9}
                 xs={9}
                 item={true}
-                style={{display:"flex"}}
+                style={{ display: "flex" }}
               >
                 <Paper
                   key={"0"}
@@ -98,7 +98,7 @@ function Steppercomponent(props) {
                   elevation={"{3}"}
                   style={qdmstyles.fDGwz}
                 >
-                  <Avatar
+                  {/* <Avatar
                     key={"0"}
                     id={"RT95t"}
                     alt={"Avatar"}
@@ -107,10 +107,13 @@ function Steppercomponent(props) {
                       "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/325384497"
                     }
                     style={qdmstyles.HkVSt}
-                  ></Avatar>
+                  ></Avatar> */}
+                  <ArrowBackIosOutlinedIcon
+                    fontSize="small"
+                    style={{ placeSelf: "center" }}
+                  />
                 </Paper>
-             
-            
+
                 <Typography
                   key={"0"}
                   id={"yf8Th"}
@@ -121,8 +124,7 @@ function Steppercomponent(props) {
                   children={"Add New Drug catalog master"}
                   style={qdmstyles.LP}
                 ></Typography>
-              
-             
+
                 <MuiStepper
                   key={"0"}
                   id={"ifdFf"}
