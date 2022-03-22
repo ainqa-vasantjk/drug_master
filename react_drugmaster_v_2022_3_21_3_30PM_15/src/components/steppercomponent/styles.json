@@ -13,7 +13,9 @@
     "display": "grid"
   },
   "stpp":{"margin":"0px 18px"},
- 
+ "MJAV":{
+   "width":"450px"
+ },
   "HkVSt": {
     "widthValue": "",
     "widthType": "px",
