@@ -254,7 +254,8 @@ function Statuslist(props) {
               <TextField
                 key={"0"}
                 id={"SX3Jx"}
-                placeholder={"Type here"}
+                label={"Type here"}
+                placeholder={""}
                 type={"text"}
                 variant={"outlined"}
                 size={"small"}

@@ -2011,7 +2011,7 @@ class Drugintscreen extends React.Component {
                                 renderInput={(params) => (
                                   <ALLMCORE.TextField
                                     {...params}
-                                    placeholder="Facility"
+                                    label={"Facility"}
                                     variant="outlined"
                                   />
                                 )}

@@ -9,9 +9,18 @@ import { useDispatch, useSelector } from "react-redux";
 import Config from "../../config";
 import * as ALLMCORE from "@material-ui/core";
 import cookie from "react-cookies";
-
+import Froala from "react-froala-wysiwyg";
+import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
+import CloseRoundedIcon from "@material-ui/icons/CloseRounded";
 import * as ALL from "../../components";
-import { Modal } from "qdm-component-library";
+// import "froala-editor/js/plugins/fullscreen.min.js"
+
+// Require Editor CSS files.
+import "froala-editor/css/froala_style.min.css";
+import "froala-editor/css/froala_editor.pkgd.min.css";
+import "froala-editor/css/third_party/embedly.min.css";
+// import "froala-editor/css/plugins/fullscreen.min.css";
+
 import {
   Paper,
   Grid,
@@ -20,18 +29,32 @@ import {
   Avatar,
   Divider,
   Link,
+  Box,
+  Modal,
 } from "@material-ui/core";
-
+import { Autocomplete } from "custom-material-ui-component";
 import qdmstyles from "./styles.json";
 import "./index.css";
+import { makeStyles } from "@material-ui/core";
 var aes256 = require("aes256");
-
+const useStyles = makeStyles((theme) => ({
+  modal: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "8px",
+  },
+  grid: {
+    outline: 0,
+  },
+}));
 function Instructioncomp(props) {
   const dispatch = useDispatch();
-
+  const classes = useStyles();
   const contextType = React.useContext(LoggerContext);
   const [state, setState] = React.useState({
     permissionData: null,
+    showInstructionModal: false,
   });
 
   const changeState = (key, value) => {
@@ -40,7 +63,9 @@ function Instructioncomp(props) {
       [key]: value,
     });
   };
-
+  const handlemodalclose = () => {
+    setState({ showInstructionModal: false });
+  };
   React.useEffect(() => {
     /// initializing transalation
     if (sessionStorage.defaultLng) {
@@ -121,6 +146,7 @@ function Instructioncomp(props) {
                   color={"primary"}
                   children={"+ Add New"}
                   aliasName={"instructionaddnewbutton"}
+                  onClick={() => setState({ showInstructionModal: true })}
                   style={qdmstyles.gPw}
                 ></Button>
               </Grid>
@@ -993,6 +1019,526 @@ function Instructioncomp(props) {
               </Paper>
             </Grid>
           </Paper>
+          <Modal open={state.showInstructionModal} className={classes.modal}>
+            <Grid
+              key={"0"}
+              id={"G1q6Q"}
+              container={true}
+              direction={"row"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              lg={"6"}
+              md={"6"}
+              sm={"6"}
+              xl={"6"}
+              xs={"6"}
+              className={classes.grid}
+            >
+              <Paper
+                key={"0"}
+                id={"I2if7"}
+                elevation={"{3}"}
+                style={qdmstyles.arK}
+              >
+                <Grid
+                  key={"0"}
+                  id={"sJZsO"}
+                  container={true}
+                  direction={"row"}
+                  justifyContent={"space-between"}
+                  alignItems={"center"}
+                  lg={"12"}
+                  md={"12"}
+                  sm={"12"}
+                  xl={"12"}
+                  xs={"12"}
+                  style={qdmstyles.TQIrv}
+                >
+                  <Grid
+                    key={"0"}
+                    id={"6Ygnf"}
+                    container={false}
+                    direction={"row"}
+                    justifyContent={"flex-start"}
+                    alignItems={"center"}
+                    lg={"3"}
+                    md={"6"}
+                    sm={"6"}
+                    xl={"3"}
+                    xs={"6"}
+                    item={true}
+                  >
+                    <Typography
+                      key={"0"}
+                      id={"addInstructions_Typography"}
+                      align={"inherit"}
+                      color={"initial"}
+                      display={"initial"}
+                      variant={"body1"}
+                      children={"ADD INSTRUCTIONS"}
+                      aliasName={"addInstructionsTypography"}
+                      style={qdmstyles.huQWE}
+                    ></Typography>
+                  </Grid>
+                  <Grid
+                    key={"1"}
+                    id={"ohqRw"}
+                    container={false}
+                    direction={"row"}
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                    lg={1}
+                    md={2}
+                    sm={2}
+                    xl={1}
+                    xs={2}
+                    item={true}
+                  >
+                    <Paper
+                      key={"0"}
+                      id={"close_icon"}
+                      alt={"Avatar"}
+                      variant={"rounded"}
+                      aliasName={"closeicon"}
+                      elevation={false}
+                      style={{
+                        width: "26px",
+                        height: "26px",
+                        borderRadius: "50%",
+                        backgroundColor: "#E5E8EE",
+                        display: "grid",
+                        cursor: "pointer",
+                      }}
+                      onClick={() => handlemodalclose()}
+                    >
+                      <CloseRoundedIcon
+                        fontSize="small"
+                        style={{ placeSelf: "center" }}
+                      />
+                    </Paper>
+                  </Grid>
+                </Grid>
+                <Divider
+                  key={"1"}
+                  id={"hzN6n"}
+                  variant={"fullWidth"}
+                  style={qdmstyles.TwDvp}
+                ></Divider>
+                <Grid
+                  key={"2"}
+                  id={"IwptL"}
+                  container={true}
+                  direction={"column"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                >
+                  <Grid
+                    key={"0"}
+                    id={"mraSZ"}
+                    container={true}
+                    direction={"column"}
+                    justifyContent={"center"}
+                    alignItems={"flex-start"}
+                    item={true}
+                    lg={"12"}
+                    md={"12"}
+                  >
+                    <Grid
+                      key={"0"}
+                      id={"Rrg5g"}
+                      container={true}
+                      direction={"row"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      item={true}
+                      lg={"6"}
+                      md={"6"}
+                      sm={"6"}
+                      xl={"6"}
+                      xs={"6"}
+                      style={qdmstyles.Rrgg}
+                    >
+                      <Typography
+                        key={"0"}
+                        id={"InstructionType_Typography"}
+                        align={"inherit"}
+                        color={"initial"}
+                        display={"initial"}
+                        variant={"body1"}
+                        children={"Instruction Type"}
+                        aliasName={"InstructionTypeTypography"}
+                        style={qdmstyles.VNCk}
+                      ></Typography>
+                      <Autocomplete
+                        getOptionLabel={(option) => option?.[""]}
+                        options={[] ?? []}
+                        size={"small"}
+                        renderInput={(params) => (
+                          <ALLMCORE.TextField
+                            {...params}
+                            label={""}
+                            variant="outlined"
+                          />
+                        )}
+                      />
+                    </Grid>
+                  </Grid>
+                  <Grid
+                    key={"1"}
+                    id={"mraSZ"}
+                    container={true}
+                    direction={"column"}
+                    justifyContent={"center"}
+                    alignItems={"flex-start"}
+                    item={true}
+                    lg={"12"}
+                  >
+                    <Grid
+                      key={"0"}
+                      id={"HKwb7"}
+                      container={true}
+                      direction={"row"}
+                      justifyContent={"flex-start"}
+                      alignItems={"center"}
+                      item={true}
+                      lg={"6"}
+                      md={"6"}
+                      sm={"6"}
+                      xl={"6"}
+                      xs={"6"}
+                    >
+                      <Typography
+                        key={"0"}
+                        id={"instructionDescription_Typography"}
+                        align={"inherit"}
+                        color={"initial"}
+                        display={"initial"}
+                        variant={"body1"}
+                        children={"Instruction Description"}
+                        aliasName={"instructionDescriptionTypography"}
+                        style={qdmstyles.JFpJ}
+                      ></Typography>
+                    </Grid>
+                    <Grid
+                      key={"1"}
+                      id={"05l1O"}
+                      container={false}
+                      direction={"row"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      item={true}
+                    >
+                      <Box key={"0"} id={"FSxha"} m={1} component={"div"}>
+                        <Froala
+                          tag="textarea"
+                          config={{
+                            attribution: false,
+                            placeholder: "Start typing...",
+                            toolbarButtons: {
+                              moreText: {
+                                buttons: [
+                                  "bold",
+                                  "italic",
+                                  "underline",
+                                  "strikeThrough",
+                                  "subscript",
+                                  "superscript",
+                                  "fontFamily",
+                                  "fontSize",
+                                  "textColor",
+                                  "backgroundColor",
+                                  "inlineClass",
+                                  "inlineStyle",
+                                  "clearFormatting",
+                                ],
+                              },
+                              moreParagraph: {
+                                buttons: [
+                                  "alignLeft",
+                                  "alignCenter",
+                                  "formatOLSimple",
+                                  "alignRight",
+                                  "alignJustify",
+                                  "formatOL",
+                                  "formatUL",
+                                  "paragraphFormat",
+                                  "paragraphStyle",
+                                  "lineHeight",
+                                  "outdent",
+                                  "indent",
+                                  "quote",
+                                ],
+                              },
+                              moreRich: {
+                                buttons: [
+                                  "insertLink",
+                                  "insertImage",
+                                  "insertVideo",
+                                  "insertTable",
+                                  "emoticons",
+                                  "fontAwesome",
+                                  "specialCharacters",
+                                  "embedly",
+                                  "insertFile",
+                                  "insertHR",
+                                ],
+                              },
+                              moreMisc: {
+                                buttons: [
+                                  "undo",
+                                  "redo",
+                                  "fullscreen",
+                                  "print",
+                                  "getPDF",
+                                  "spellChecker",
+                                  "selectAll",
+                                  "html",
+                                  "help",
+                                ],
+                                align: "right",
+                                buttonsVisible: 2,
+                              },
+                            },
+                            pluginsEnabled: [
+                              "table",
+                              "spell",
+                              "quote",
+                              "save",
+                              "quickInsert",
+                              "paragraphFormat",
+                              "paragraphStyle",
+                              "help",
+                              "draggable",
+                              "align",
+                              "link",
+                              "lists",
+                              "file",
+                              "image",
+                              "emoticons",
+                              "url",
+                              "video",
+                              "embedly",
+                              "colors",
+                              "entities",
+                              "inlineClass",
+                              "inlineStyle",
+                              // 'codeBeautif '
+                              // 'spellChecker',
+                              "imageTUI",
+                            ],
+                          }}
+                        />
+                        <br />
+                        <FroalaEditorView />
+                      </Box>
+                    </Grid>
+                  </Grid>
+                  <Grid
+                    key={"2"}
+                    id={"mraSZ"}
+                    container={true}
+                    direction={"column"}
+                    justifyContent={"center"}
+                    alignItems={"flex-start"}
+                    item={true}
+                    lg={"12"}
+                  >
+                    <Grid
+                      key={"0"}
+                      id={"HKwb7"}
+                      container={true}
+                      direction={"row"}
+                      justifyContent={"flex-start"}
+                      alignItems={"center"}
+                      item={true}
+                      lg={"6"}
+                      md={"6"}
+                      sm={"6"}
+                      xl={"6"}
+                      xs={"6"}
+                    >
+                      <Typography
+                        key={"0"}
+                        id={"instruction_local_language_header"}
+                        align={"inherit"}
+                        color={"initial"}
+                        display={"initial"}
+                        variant={"body1"}
+                        children={"Instruction Local Language"}
+                        aliasName={"instructionlocallanguageheader"}
+                        style={qdmstyles.BGX}
+                      ></Typography>
+                    </Grid>
+                    <Grid
+                      key={"1"}
+                      id={"U5DoF"}
+                      container={true}
+                      direction={"row"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                    >
+                      <Box key={"0"} id={"cMq76"} m={1} component={"div"}>
+                        {/* <FroalaEditorView /> */}
+                        <Froala
+                          tag="textarea"
+                          config={{
+                            attribution: false,
+                            placeholder: "Start typing...",
+                            toolbarButtons: {
+                              moreText: {
+                                buttons: [
+                                  "bold",
+                                  "italic",
+                                  "underline",
+                                  "strikeThrough",
+                                  "subscript",
+                                  "superscript",
+                                  "fontFamily",
+                                  "fontSize",
+                                  "textColor",
+                                  "backgroundColor",
+                                  "inlineClass",
+                                  "inlineStyle",
+                                  "clearFormatting",
+                                ],
+                              },
+                              moreParagraph: {
+                                buttons: [
+                                  "alignLeft",
+                                  "alignCenter",
+                                  "formatOLSimple",
+                                  "alignRight",
+                                  "alignJustify",
+                                  "formatOL",
+                                  "formatUL",
+                                  "paragraphFormat",
+                                  "paragraphStyle",
+                                  "lineHeight",
+                                  "outdent",
+                                  "indent",
+                                  "quote",
+                                ],
+                              },
+                              moreRich: {
+                                buttons: [
+                                  "insertLink",
+                                  "insertImage",
+                                  "insertVideo",
+                                  "insertTable",
+                                  "emoticons",
+                                  "fontAwesome",
+                                  "specialCharacters",
+                                  "embedly",
+                                  "insertFile",
+                                  "insertHR",
+                                ],
+                              },
+                              moreMisc: {
+                                buttons: [
+                                  "undo",
+                                  "redo",
+                                  "fullscreen",
+                                  "print",
+                                  "getPDF",
+                                  "spellChecker",
+                                  "selectAll",
+                                  "html",
+                                  "help",
+                                ],
+                                align: "right",
+                                buttonsVisible: 2,
+                              },
+                            },
+                            pluginsEnabled: [
+                              "table",
+                              "spell",
+                              "quote",
+                              "save",
+                              "quickInsert",
+                              "paragraphFormat",
+                              "paragraphStyle",
+                              "help",
+                              "draggable",
+                              "align",
+                              "link",
+                              "lists",
+                              "file",
+                              "image",
+                              "emoticons",
+                              "url",
+                              "video",
+                              "embedly",
+                              "colors",
+                              "entities",
+                              "inlineClass",
+                              "inlineStyle",
+                              // 'codeBeautif '
+                              // 'spellChecker',
+                              "imageTUI",
+                            ],
+                          }}
+                        />
+                        <br />
+                      </Box>
+                    </Grid>
+                  </Grid>
+                </Grid>
+                <Grid
+                  key={"3"}
+                  id={"66hWy"}
+                  container={true}
+                  direction={"row"}
+                  justifyContent={"flex-end"}
+                  alignItems={"center"}
+                  lg={"12"}
+                  md={"12"}
+                  sm={"12"}
+                  xl={"12"}
+                  xs={"12"}
+                  spacing={1}
+                  style={qdmstyles.yWg}
+                >
+                  <Grid
+                    key={"0"}
+                    id={"Et6L0"}
+                    container={""}
+                    direction={"row"}
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                    item={true}
+                    spacing={"6"}
+                    lg={"6"}
+                    md={"3"}
+                    sm={"6"}
+                    xl={"6"}
+                    xs={"6"}
+                    style={qdmstyles.hYHKP}
+                  >
+                    <Button
+                      key={"0"}
+                      id={"save&Addanother_Button"}
+                      variant={"text"}
+                      color={"primary"}
+                      children={"Save & Add another"}
+                      size={"small"}
+                      aliasName={"save&AddanotherButton"}
+                      style={qdmstyles.bUu}
+                    ></Button>
+                    <Button
+                      key={"1"}
+                      id={"addButtonOfAddInstructionDailog_button"}
+                      variant={"contained"}
+                      color={"primary"}
+                      children={" Add"}
+                      size={"small"}
+                      aliasName={"addButtonOfAddInstructionDailog"}
+                      style={qdmstyles.ad}
+                    ></Button>
+                  </Grid>
+                </Grid>
+              </Paper>
+            </Grid>
+          </Modal>
         </React.Fragment>
       )}
     </NamespacesConsumer>

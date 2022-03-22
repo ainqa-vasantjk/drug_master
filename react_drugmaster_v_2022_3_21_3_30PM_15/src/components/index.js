@@ -7,7 +7,6 @@
  */
 export * from "./alert";
 export { default as Drugotherattributes } from "./drugotherattributes";
-export { default as Aliasmapping } from "./aliasmapping";
 export { default as Capsule } from "./capsule";
 export { default as Availablestrengthtableheader } from "./availablestrengthtableheader";
 export { default as Orderdefault } from "./orderdefault";
@@ -24,7 +23,6 @@ export { default as Aliasmappingcomp } from "./aliasmappingcomp";
 export { default as Alerttablevalue } from "./alerttablevalue";
 export { default as Orderdetailscomp } from "./orderdetailscomp";
 export { default as Drugintscreencomp } from "./drugintscreencomp";
-export { default as Alertscreencomp } from "./alertscreencomp";
 export { default as Alerttablerow } from "./alerttablerow";
 export { default as Unitofmeasurecomp } from "./unitofmeasurecomp";
 export { default as Drugmastertablevalue } from "./drugmastertablevalue";
