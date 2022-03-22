@@ -740,6 +740,7 @@ function Despensedefaultcomp(props) {
                           children={"Save & Add another"}
                           aliasName={"save&AddAnotherButton"}
                           style={qdmstyles.mbBtY}
+                          size={"small"}
                         ></Button>
                         <Grid
                           key={"1"}

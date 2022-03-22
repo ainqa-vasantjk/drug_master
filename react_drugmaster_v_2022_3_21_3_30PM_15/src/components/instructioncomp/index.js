@@ -966,6 +966,29 @@ function Instructioncomp(props) {
                       absolute={""}
                     ></Divider>
                   </Grid>
+                  <Grid
+                      key={"1"}
+                      id={"roJ0A"}
+                      container={true}
+                      direction={"column"}
+                      justifyContent={"flex-start"}
+                      alignItems={"flex-start"}
+                      style={qdmstyles.Jyph}
+                    >
+                      <Typography
+                        key={"0"}
+                        id={"cTAwT"}
+                        align={"inherit"}
+                        color={"initial"}
+                        display={"initial"}
+                        variant={"body1"}
+                        children={
+                          "1. Fermentum Tristique ."
+                        }
+                        gutterBottom={""}
+                        style={qdmstyles.Joauv}
+                      ></Typography>
+                    </Grid>
                 </Grid>
               </Paper>
             </Grid>

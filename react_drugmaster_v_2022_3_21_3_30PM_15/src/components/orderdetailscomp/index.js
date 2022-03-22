@@ -86,14 +86,14 @@ function Orderdetailscomp(props) {
               alignItems={"center"}
               lg={"12"}
             >
-              <Divider
+              {/* <Divider
                 key={"0"}
                 id={"yohAt"}
                 variant={"fullWidth"}
                 flexItem={""}
                 orientation={"horizontal"}
                 light={true}
-              ></Divider>
+              ></Divider> */}
             </Grid>
             <Grid
               key={"1"}
@@ -510,12 +510,12 @@ function Orderdetailscomp(props) {
                           direction={"row"}
                           justifyContent={"flex-start"}
                           alignItems={"flex-start"}
-                          lg={"10"}
+                          lg={"12"}
                           spacing={"2"}
-                          md={"10"}
-                          sm={"10"}
-                          xl={"10"}
-                          xs={"10"}
+                          md={"12"}
+                          sm={"12"}
+                          xl={"12"}
+                          xs={"12"}
                         >
                           <Grid
                             key={"0"}
@@ -524,12 +524,12 @@ function Orderdetailscomp(props) {
                             direction={"row"}
                             justifyContent={"center"}
                             alignItems={"center"}
-                            lg={"4"}
+                            lg={"3"}
                             item={true}
-                            md={"4"}
-                            sm={"4"}
-                            xl={"4"}
-                            xs={"4"}
+                            md={"3"}
+                            sm={"3"}
+                            xl={"3"}
+                            xs={"3"}
                             style={qdmstyles.TcBm}
                           >
                             <Typography
@@ -609,11 +609,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                                 style={qdmstyles.JGib}
                               >
@@ -629,14 +629,14 @@ function Orderdetailscomp(props) {
                                   size="small"
                                 ></TextField>
                               </Grid>
-                              <Divider
+                              {/* <Divider
                                 key={"1"}
                                 id={"i68WA"}
                                 variant={"fullWidth"}
                                 flexItem={true}
                                 orientation={"vertical"}
                                 style={qdmstyles.qFJy}
-                              ></Divider>
+                              ></Divider> */}
                               <Grid
                                 key={"2"}
                                 id={"VtLuv"}
@@ -644,11 +644,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                               >
                                 <Autocomplete
@@ -720,11 +720,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                                 style={qdmstyles.PO}
                               >
@@ -739,14 +739,14 @@ function Orderdetailscomp(props) {
                                   size="small"
                                 ></TextField>
                               </Grid>
-                              <Divider
+                              {/* <Divider
                                 key={"1"}
                                 id={"i68WA"}
                                 variant={"fullWidth"}
                                 flexItem={true}
                                 orientation={"vertical"}
                                 style={qdmstyles.mp}
-                              ></Divider>
+                              ></Divider> */}
                               <Grid
                                 key={"2"}
                                 id={"VtLuv"}
@@ -754,11 +754,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                               >
                                 <Autocomplete
@@ -821,7 +821,7 @@ function Orderdetailscomp(props) {
                               sm={"12"}
                               xl={"12"}
                               xs={"12"}
-                              style={qdmstyles.lJmR}
+                              // style={qdmstyles.lJmR}
                             >
                               <Grid
                                 key={"0"}
@@ -830,11 +830,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                                 style={qdmstyles.yfdK}
                               >
@@ -849,14 +849,14 @@ function Orderdetailscomp(props) {
                                   size="small"
                                 ></TextField>
                               </Grid>
-                              <Divider
+                              {/* <Divider
                                 key={"1"}
                                 id={"i68WA"}
                                 variant={"fullWidth"}
                                 flexItem={true}
                                 orientation={"vertical"}
                                 style={qdmstyles.QKY}
-                              ></Divider>
+                              ></Divider> */}
                               <Grid
                                 key={"2"}
                                 id={"VtLuv"}
@@ -864,11 +864,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                               >
                                 <Autocomplete
@@ -931,7 +931,7 @@ function Orderdetailscomp(props) {
                               sm={"12"}
                               xl={"12"}
                               xs={"12"}
-                              style={qdmstyles.MkFF}
+                              // style={qdmstyles.MkFF}
                             >
                               <Grid
                                 key={"0"}
@@ -940,11 +940,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                                 style={qdmstyles.yFOl}
                               >
@@ -959,14 +959,14 @@ function Orderdetailscomp(props) {
                                   size="small"
                                 ></TextField>
                               </Grid>
-                              <Divider
+                              {/* <Divider
                                 key={"1"}
                                 id={"i68WA"}
                                 variant={"fullWidth"}
                                 flexItem={true}
                                 orientation={"vertical"}
                                 style={qdmstyles.EODfM}
-                              ></Divider>
+                              ></Divider> */}
                               <Grid
                                 key={"2"}
                                 id={"VtLuv"}
@@ -974,11 +974,11 @@ function Orderdetailscomp(props) {
                                 direction={"row"}
                                 justifyContent={"center"}
                                 alignItems={"center"}
-                                lg={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
+                                lg={"6"}
+                                md={"6"}
+                                sm={"6"}
+                                xl={"6"}
+                                xs={"6"}
                                 item={true}
                               >
                                 <Autocomplete
@@ -1059,6 +1059,7 @@ function Orderdetailscomp(props) {
               direction={"row"}
               justifyContent={"center"}
               alignItems={"center"}
+              style={qdmstyles.nxxt}
             >
               <Grid
                 key={"0"}

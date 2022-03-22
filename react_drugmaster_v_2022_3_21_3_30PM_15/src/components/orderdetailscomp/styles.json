@@ -139,10 +139,8 @@
     "paddingRight": "px",
     "marginLeftValue": "5",
     "marginLeftType": "px",
-    "marginLeft": "5px",
     "marginRightValue": "5",
-    "marginRightType": "px",
-    "marginRight": "5px"
+    "marginRightType": "px"
   },
   "jQG": { "marginLeftValue": "", "marginLeftType": "px", "marginLeft": "px" },
   "wbZg": {
@@ -312,11 +310,7 @@
     "marginBottom": "10px"
   },
   "jYGK": {
-    "display": "",
-    "borderWidth": "1px",
-    "borderStyle": "solid",
-    "borderColor": "#DEE5EC",
-    "borderRadius": "8px"
+ 
   },
   "JGib": { "display": "flex", "justifyContent": "flex-end" },
   "atQ": {},
@@ -348,11 +342,7 @@
     "marginBottom": "10px"
   },
   "piT": {
-    "display": "",
-    "borderWidth": "1px",
-    "borderStyle": "solid",
-    "borderColor": "#DEE5EC",
-    "borderRadius": "8px"
+ 
   },
   "PO": { "display": "flex", "justifyContent": "flex-end" },
   "lHv": {},
@@ -506,6 +496,9 @@
     "letterSpacing": "0px",
     "fontWeight": "600",
     "textTransform": "uppercase"
+  },
+  "nxxt":{
+    "marginTop":"10px"
   },
   "Xtuss": {
     "display": "flex",

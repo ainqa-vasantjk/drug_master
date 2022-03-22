@@ -246,7 +246,7 @@
   },
   "vyHUU": {},
   "bHKYo": {
-    "borderRadius": "",
+    "borderRadius": "8px",
     "borderColor": "",
     "borderWidth": "",
     "borderStyle": ""
@@ -353,7 +353,8 @@
     "color": "#2A60BC",
     "marginRightValue": "5",
     "marginRightType": "px",
-    "marginRight": "5px"
+    "marginRight": "5px",
+    "textTransform":"capitalize"
   },
   "RkD": {
     "marginLeftValue": "5",
@@ -368,7 +369,6 @@
     "width": "65px",
     "heightValue": "40",
     "heightType": "px",
-    "height": "40px",
     "borderRadius": "8px"
   },
   "a": {},

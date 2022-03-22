@@ -727,7 +727,7 @@ class Samplescreen extends React.Component {
             <Grid
               key={"3"}
               id={"C2Q2C"}
-              container={true}
+              container={"true"}
               direction={"row"}
               justifyContent={"center"}
               alignItems={"center"}

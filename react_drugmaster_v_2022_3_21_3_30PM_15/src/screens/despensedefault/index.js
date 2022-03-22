@@ -753,6 +753,7 @@ class Despensedefault extends React.Component {
                             children={"Save & Add another"}
                             aliasName={"save&AddAnotherButton"}
                             style={qdmstyles.QGSNj}
+                            size={"small"}
                           ></Button>
                           <Grid
                             key={"1"}

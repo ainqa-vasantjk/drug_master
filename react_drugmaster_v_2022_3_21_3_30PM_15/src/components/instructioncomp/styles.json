@@ -139,10 +139,10 @@
     "margin": "px",
     "marginTopValue": "2",
     "marginTopType": "px",
-    "marginTop": "2px",
+    "marginTop": "4px",
     "marginBottomValue": "2",
     "marginBottomType": "px",
-    "marginBottom": "2px"
+    "marginBottom": "4px"
   },
   "QdEy": {},
   "YQQt": {
@@ -279,7 +279,7 @@
     "textAlign": "left",
     "textTransform": "capitalize"
   },
-  "tUPl": { "widthValue": "100", "widthType": "%", "width": "100%" },
+  "tUPl": { "widthValue": "100", "widthType": "%", "width": "100%","marginTop":"5px","marginBottom":"5px" },
   "Slepg": {},
   "gWZb": {},
   "aHRsm": {
@@ -461,7 +461,7 @@
     "textAlign": "left",
     "textTransform": "capitalize"
   },
-  "YIsXY": { "widthValue": "100", "widthType": "%", "width": "100%" },
+  "YIsXY": { "widthValue": "100", "widthType": "%", "width": "100%","marginTop":"5px","marginBottom":"5px" },
   "FArj": {},
   "Jyph": {
     "marginValue": "",
@@ -551,6 +551,6 @@
     "textAlign": "left",
     "textTransform": "capitalize"
   },
-  "QUXDg": { "widthValue": "100", "widthType": "%", "width": "100%" },
+  "QUXDg": { "widthValue": "100", "widthType": "%", "width": "100%","marginTop":"5px","marginBottom":"5px" },
   "bQvW": {}
 }
