@@ -235,13 +235,13 @@ function Synonymcomp(props) {
                             synonymcomp_kxfmy: state?.synonymcomp_kxfmy ?? null,
                           })
                         }
-                        getOptionLabel={(option) => option?.["label"]}
+                        getOptionLabel={(option) => option?.[""]}
                         options={[] ?? []}
                         size={"small"}
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            placeholder="label"
+                            placeholder=""
                             variant="outlined"
                           />
                         )}
@@ -270,13 +270,13 @@ function Synonymcomp(props) {
                             synonymcomp_sqi5e: state?.synonymcomp_sqi5e ?? null,
                           })
                         }
-                        getOptionLabel={(option) => option?.["label"]}
+                        getOptionLabel={(option) => option?.[""]}
                         options={[] ?? []}
                         size={"small"}
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            placeholder="label"
+                            placeholder=""
                             variant="outlined"
                           />
                         )}
@@ -344,13 +344,13 @@ function Synonymcomp(props) {
                             synonymcomp_j8z5z: state?.synonymcomp_j8z5z ?? null,
                           })
                         }
-                        getOptionLabel={(option) => option?.["label"]}
+                        getOptionLabel={(option) => option?.[""]}
                         options={[] ?? []}
                         size={"small"}
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            placeholder="label"
+                            placeholder=""
                             variant="outlined"
                           />
                         )}
@@ -379,13 +379,13 @@ function Synonymcomp(props) {
                             synonymcomp_1hodb: state?.synonymcomp_1hodb ?? null,
                           })
                         }
-                        getOptionLabel={(option) => option?.["label"]}
+                        getOptionLabel={(option) => option?.[""]}
                         options={[] ?? []}
                         size={"small"}
                         renderInput={(params) => (
                           <ALLMCORE.TextField
                             {...params}
-                            placeholder="label"
+                            placeholder=""
                             variant="outlined"
                           />
                         )}

@@ -50,7 +50,6 @@
     "lineHeightType": "px",
     "lineHeight": "9px",
     "fontWeight": "500",
-    "textTransform": "",
     "letterSpacingValue": "0",
     "letterSpacingType": "px",
     "letterSpacing": "0px",
@@ -59,7 +58,8 @@
     "margin": "px",
     "paddingValue": "",
     "paddingType": "px",
-    "padding": "px"
+    "padding": "px",
+    "textTransform":"capitalize"
   },
   "KWgvx": { "widthValue": "", "widthType": "%", "width": "%" },
   "FDGI": {

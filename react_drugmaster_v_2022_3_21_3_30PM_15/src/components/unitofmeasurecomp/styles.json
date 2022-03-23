@@ -81,9 +81,11 @@
     "marginTop": "4px",
     "marginBottomValue": "4",
     "marginBottomType": "px",
-    "marginBottom": "4px"
+    "marginBottom": "4px",
+    "backgroundColor": "#DEE5EC",
+    "borderRadius":"8px"
   },
-  "FxFNF": { "backgroundColor": "#DEE5EC"},
+  "FxFNF": { },
   "husub": {
     "marginRightValue": "",
     "marginRightType": "px",
@@ -112,9 +114,12 @@
     "marginTop": "4px",
     "marginBottomValue": "4",
     "marginBottomType": "px",
-    "marginBottom": "4px"
+    "marginBottom": "4px",
+    "backgroundColor": "#DEE5EC",
+    "borderRadius":"8px"
+   
   },
-  "WvQI": { "backgroundColor": "#DEE5EC"},
+  "WvQI": {  },
   "GSZZ": {
     "marginRightValue": "",
     "marginRightType": "px",

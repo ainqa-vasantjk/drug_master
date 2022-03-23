@@ -134,17 +134,16 @@ function Despensedefaultcomp(props) {
                     aliasName={"addNewDispensedefaultheading"}
                     style={qdmstyles.JfSS}
                   ></Typography>
-                  <Typography
+                  <Button
                     key={"1"}
                     id={"addNewDispensedefaultheading"}
-                    align={"inherit"}
-                    color={"primary"}
                     display={"initial"}
-                    variant={"body1"}
+                    variant={"text"}
                     children={"cancel"}
+                    size="medium"
                     aliasName={"addNewDispensedefaultheading"}
                     style={qdmstyles.FIySA}
-                  ></Typography>
+                  ></Button>
                 </Grid>
               </Grid>
               <Grid
@@ -257,7 +256,7 @@ function Despensedefaultcomp(props) {
                             direction={"row"}
                             justifyContent={"center"}
                             alignItems={"center"}
-                            style={{padding:"0px 10px"}}
+                            style={{ padding: "0px 10px" }}
                           >
                             <Typography
                               key={"0"}
@@ -424,7 +423,7 @@ function Despensedefaultcomp(props) {
                             xs={"6"}
                           >
                             <TextField
-                            className={classes.textbor}
+                              className={classes.textbor}
                               key={"0"}
                               id={"defaultDispenseDuration&Uominput"}
                               label={""}
@@ -454,7 +453,7 @@ function Despensedefaultcomp(props) {
                             md={"6"}
                           >
                             <Autocomplete
-                            className={classes.auto}
+                              className={classes.auto}
                               id={"Lxtmr"}
                               style={qdmstyles?.Lxtmr}
                               value={state?.despensedefaultcomp_lxtmr ?? null}
@@ -548,7 +547,7 @@ function Despensedefaultcomp(props) {
                             xs={"6"}
                           >
                             <TextField
-                             className={classes.textbor}
+                              className={classes.textbor}
                               key={"0"}
                               id={"maxdispdurationval&Uom_Textfield"}
                               label={""}
@@ -578,7 +577,7 @@ function Despensedefaultcomp(props) {
                             md={"6"}
                           >
                             <Autocomplete
-                             className={classes.auto}
+                              className={classes.auto}
                               id={"OXRzD"}
                               style={qdmstyles?.OXRzD}
                               value={state?.despensedefaultcomp_oxrzd ?? null}

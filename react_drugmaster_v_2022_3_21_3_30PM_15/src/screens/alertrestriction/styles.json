@@ -34,9 +34,10 @@
     "display": "flex",
     "justifyContent": "flex-end",
     "alignItems": "center"
+   
   },
   "irxhT": {
-    "color": "#6A7888",
+    "color":"#2A60BC",
     "fontSizeValue": "14",
     "fontSizeType": "px",
     "fontSize": "14px",

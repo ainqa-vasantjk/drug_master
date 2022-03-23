@@ -466,6 +466,11 @@ function Orderdetailscomp(props) {
                           variant={"body1"}
                           children={"(or)"}
                           aliasName={"OrHeading"}
+                          style={{
+                            font: "normal normal medium 14px/20px Poppins",
+                            letterSpacing: "0px",
+                            color: "#2A3C50",
+                          }}
                         ></Typography>
                       </Grid>
                       <Grid

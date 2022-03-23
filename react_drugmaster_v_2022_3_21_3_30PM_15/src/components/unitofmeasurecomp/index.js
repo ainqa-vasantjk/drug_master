@@ -166,13 +166,13 @@ function Unitofmeasurecomp(props) {
                             state?.unitofmeasurecomp_sz944 ?? null,
                         })
                       }
-                      getOptionLabel={(option) => option?.["label"]}
+                      getOptionLabel={(option) => option?.[""]}
                       options={[] ?? []}
                       size={"small"}
                       renderInput={(params) => (
                         <ALLMCORE.TextField
                           {...params}
-                          label={"label"}
+                          label={""}
                           variant="outlined"
                         />
                       )}
@@ -246,7 +246,7 @@ function Unitofmeasurecomp(props) {
                       size={"small"}
                       aliasName={"AverageRateInput"}
                       fullWidth={true}
-                      style={qdmstyles.FxFNF}
+                      // style={qdmstyles.FxFNF}
                     ></TextField>
                   </Grid>
                 </Grid>
@@ -318,7 +318,7 @@ function Unitofmeasurecomp(props) {
                       size={"small"}
                       aliasName={"stockValueInput"}
                       fullWidth={true}
-                      style={qdmstyles.WvQI}
+                      // style={qdmstyles.WvQI}
                     ></TextField>
                   </Grid>
                 </Grid>
@@ -332,9 +332,9 @@ function Unitofmeasurecomp(props) {
                   item={true}
                   lg={"2"}
                   md={"2"}
-                  sm={"2"}
+                  sm={"3"}
                   xl={"2"}
-                  xs={"2"}
+                  xs={"3"}
                   style={qdmstyles.GSZZ}
                 >
                   <Grid
@@ -646,13 +646,13 @@ function Unitofmeasurecomp(props) {
                                 state?.unitofmeasurecomp_oqvny ?? null,
                             })
                           }
-                          getOptionLabel={(option) => option?.["label"]}
+                          getOptionLabel={(option) => option?.[""]}
                           options={[] ?? []}
                           size={"small"}
                           renderInput={(params) => (
                             <ALLMCORE.TextField
                               {...params}
-                              label={"label"}
+                              label={""}
                               variant="outlined"
                             />
                           )}
@@ -696,13 +696,13 @@ function Unitofmeasurecomp(props) {
                                   state?.unitofmeasurecomp_lsown ?? null,
                               })
                             }
-                            getOptionLabel={(option) => option?.["label"]}
+                            getOptionLabel={(option) => option?.[""]}
                             options={[] ?? []}
                             size={"small"}
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                label={""}
                                 variant="outlined"
                               />
                             )}
@@ -801,13 +801,13 @@ function Unitofmeasurecomp(props) {
                                   state?.unitofmeasurecomp_qqcic ?? null,
                               })
                             }
-                            getOptionLabel={(option) => option?.["label"]}
+                            getOptionLabel={(option) => option?.[""]}
                             options={[] ?? []}
                             size={"small"}
                             renderInput={(params) => (
                               <ALLMCORE.TextField
                                 {...params}
-                                label={"label"}
+                                label={""}
                                 variant="outlined"
                               />
                             )}

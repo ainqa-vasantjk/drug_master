@@ -44,7 +44,7 @@ function Availablestrengthtabcomp(props) {
     permissionData: null,
     showavailableStrengthmodal: false,
   });
-
+  const [addnewrow, setAddNewRow] = React.useState([""]);
   const changeState = (key, value) => {
     setState({
       ...state,
@@ -613,6 +613,7 @@ function Availablestrengthtabcomp(props) {
                               color={"primary"}
                               children={"+ Add New"}
                               style={qdmstyles.CJQXn}
+                              onClick={() => setAddNewRow([...addnewrow, ""])}
                             ></Button>
                           </Grid>
                         </Grid>
@@ -727,82 +728,90 @@ function Availablestrengthtabcomp(props) {
                                 ></Typography>
                               </Grid>
                             </Grid>
-                            <Grid
-                              key={"1"}
-                              id={"4eEz8"}
-                              container={true}
-                              direction={"row"}
-                              justifyContent={"space-between"}
-                              alignItems={"center"}
-                              lg={"12"}
-                              md={"12"}
-                              sm={"12"}
-                              xl={"12"}
-                              xs={"12"}
-                              item={true}
-                              style={qdmstyles.WjqH}
-                            >
-                              <Grid
-                                key={"0"}
-                                id={"0yFDe"}
-                                container={""}
-                                direction={"row"}
-                                justifyContent={"center"}
-                                alignItems={"center"}
-                                item={true}
-                                lg={"5"}
-                                xl={"5"}
-                                md={"5"}
-                                sm={"5"}
-                                xs={"5"}
-                              >
-                                <ALL.Availabletabcomp />
-                              </Grid>
-                              <Grid
-                                key={"1"}
-                                id={"XLXZi"}
-                                container={""}
-                                direction={"row"}
-                                justifyContent={"center"}
-                                alignItems={"center"}
-                                lg={"2"}
-                                item={true}
-                                md={"2"}
-                                sm={"2"}
-                                xl={"2"}
-                                xs={"2"}
-                                style={qdmstyles.GXq}
-                              >
-                                <Typography
-                                  key={"0"}
-                                  id={"JMvWO"}
-                                  align={"inherit"}
-                                  color={"initial"}
-                                  display={"initial"}
-                                  variant={"body1"}
-                                  children={" /"}
-                                  style={qdmstyles.JMvWO}
-                                ></Typography>
-                              </Grid>
-                              <Grid
-                                key={"2"}
-                                id={"xTaHq"}
-                                container={""}
-                                direction={"row"}
-                                justifyContent={"center"}
-                                alignItems={"center"}
-                                lg={"5"}
-                                item={true}
-                                md={"5"}
-                                sm={"5"}
-                                xl={"5"}
-                                xs={"5"}
-                              >
-                                <ALL.Availabletabcomp />
-                              </Grid>
-                            </Grid>
+                            {console.log(state.addNewRow)}
+                            {addnewrow?.map((e, addNewRowIndex) => {
+                              return (
+                                <>
+                                  <Grid
+                                    key={"1"}
+                                    id={"4eEz8"}
+                                    container={true}
+                                    direction={"row"}
+                                    justifyContent={"space-between"}
+                                    alignItems={"center"}
+                                    lg={"12"}
+                                    md={"12"}
+                                    sm={"12"}
+                                    xl={"12"}
+                                    xs={"12"}
+                                    item={true}
+                                    style={qdmstyles.WjqH}
+                                  >
+                                    <Grid
+                                      key={"0"}
+                                      id={"0yFDe"}
+                                      container={""}
+                                      direction={"row"}
+                                      justifyContent={"center"}
+                                      alignItems={"center"}
+                                      item={true}
+                                      lg={"5"}
+                                      xl={"5"}
+                                      md={"5"}
+                                      sm={"5"}
+                                      xs={"5"}
+                                    >
+                                      <ALL.Availabletabcomp />
+                                    </Grid>
+                                    <Grid
+                                      key={"1"}
+                                      id={"XLXZi"}
+                                      container={""}
+                                      direction={"row"}
+                                      justifyContent={"center"}
+                                      alignItems={"center"}
+                                      lg={"2"}
+                                      item={true}
+                                      md={"2"}
+                                      sm={"2"}
+                                      xl={"2"}
+                                      xs={"2"}
+                                      style={qdmstyles.GXq}
+                                    >
+                                      <Typography
+                                        key={"0"}
+                                        id={"JMvWO"}
+                                        align={"inherit"}
+                                        color={"initial"}
+                                        display={"initial"}
+                                        variant={"body1"}
+                                        children={" /"}
+                                        style={qdmstyles.JMvWO}
+                                      ></Typography>
+                                    </Grid>
+                                    <Grid
+                                      key={"2"}
+                                      id={"xTaHq"}
+                                      container={""}
+                                      direction={"row"}
+                                      justifyContent={"center"}
+                                      alignItems={"center"}
+                                      lg={"5"}
+                                      item={true}
+                                      md={"5"}
+                                      sm={"5"}
+                                      xl={"5"}
+                                      xs={"5"}
+                                    >
+                                      <ALL.Availabletabcomp />
+                                    </Grid>
+                                  </Grid>
+                                </>
+                              );
+                            })}
                           </Grid>
                         </Grid>
+
                         <Grid
                           key={"3"}
                           id={"Y3yHa"}

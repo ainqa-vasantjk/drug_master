@@ -43,6 +43,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: "8px",
+    margin: "100px 0 0 0",
+    height: "400px !important",
   },
   grid: {
     outline: 0,
@@ -263,6 +265,7 @@ function Instructioncomp(props) {
                         }
                         aliasName={"instructionediticon"}
                         style={qdmstyles.PHlU}
+                        onClick={() => setState({ showInstructionModal: true })}
                       ></Avatar>
                     </Grid>
                   </Grid>
@@ -993,33 +996,36 @@ function Instructioncomp(props) {
                     ></Divider>
                   </Grid>
                   <Grid
-                      key={"1"}
-                      id={"roJ0A"}
-                      container={true}
-                      direction={"column"}
-                      justifyContent={"flex-start"}
-                      alignItems={"flex-start"}
-                      style={qdmstyles.Jyph}
-                    >
-                      <Typography
-                        key={"0"}
-                        id={"cTAwT"}
-                        align={"inherit"}
-                        color={"initial"}
-                        display={"initial"}
-                        variant={"body1"}
-                        children={
-                          "1. Fermentum Tristique ."
-                        }
-                        gutterBottom={""}
-                        style={qdmstyles.Joauv}
-                      ></Typography>
-                    </Grid>
+                    key={"1"}
+                    id={"roJ0A"}
+                    container={true}
+                    direction={"column"}
+                    justifyContent={"flex-start"}
+                    alignItems={"flex-start"}
+                    style={qdmstyles.Jyph}
+                  >
+                    <Typography
+                      key={"0"}
+                      id={"cTAwT"}
+                      align={"inherit"}
+                      color={"initial"}
+                      display={"initial"}
+                      variant={"body1"}
+                      children={"1. Fermentum Tristique ."}
+                      gutterBottom={""}
+                      style={qdmstyles.Joauv}
+                    ></Typography>
+                  </Grid>
                 </Grid>
               </Paper>
             </Grid>
           </Paper>
-          <Modal open={state.showInstructionModal} className={classes.modal}>
+          <Modal
+            open={state.showInstructionModal}
+            onClose={() => handlemodalclose()}
+            className={classes.modal}
+            style={{ height: "400px !important" }}
+          >
             <Grid
               key={"0"}
               id={"G1q6Q"}
@@ -1085,8 +1091,9 @@ function Instructioncomp(props) {
                     id={"ohqRw"}
                     container={false}
                     direction={"row"}
-                    justifyContent={"center"}
+                    justifyContent={"flex-end"}
                     alignItems={"center"}
+                    style={{ disaply: "flex", justifyContent: "flex-end" }}
                     lg={1}
                     md={2}
                     sm={2}
@@ -1172,6 +1179,7 @@ function Instructioncomp(props) {
                       <Autocomplete
                         getOptionLabel={(option) => option?.[""]}
                         options={[] ?? []}
+                        value={state?.permissionData ?? null}
                         size={"small"}
                         renderInput={(params) => (
                           <ALLMCORE.TextField
@@ -1228,7 +1236,7 @@ function Instructioncomp(props) {
                       alignItems={"center"}
                       item={true}
                     >
-                      <Box key={"0"} id={"FSxha"} m={1} component={"div"}>
+                      <Grid container={false} item={true} lg={12}>
                         <Froala
                           tag="textarea"
                           config={{
@@ -1330,7 +1338,7 @@ function Instructioncomp(props) {
                         />
                         <br />
                         <FroalaEditorView />
-                      </Box>
+                      </Grid>
                     </Grid>
                   </Grid>
                   <Grid
@@ -1340,8 +1348,11 @@ function Instructioncomp(props) {
                     direction={"column"}
                     justifyContent={"center"}
                     alignItems={"flex-start"}
-                    item={true}
                     lg={"12"}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    xl={12}
                   >
                     <Grid
                       key={"0"}
@@ -1372,12 +1383,13 @@ function Instructioncomp(props) {
                     <Grid
                       key={"1"}
                       id={"U5DoF"}
-                      container={true}
+                      container={false}
                       direction={"row"}
                       justifyContent={"center"}
                       alignItems={"center"}
+                      item={true}
                     >
-                      <Box key={"0"} id={"cMq76"} m={1} component={"div"}>
+                      <Grid container={false} item={true} lg={12}>
                         {/* <FroalaEditorView /> */}
                         <Froala
                           tag="textarea"
@@ -1479,7 +1491,7 @@ function Instructioncomp(props) {
                           }}
                         />
                         <br />
-                      </Box>
+                      </Grid>
                     </Grid>
                   </Grid>
                 </Grid>

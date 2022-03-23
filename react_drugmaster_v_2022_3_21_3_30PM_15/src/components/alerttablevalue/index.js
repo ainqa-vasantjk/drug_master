@@ -9,10 +9,10 @@ import { useDispatch, useSelector } from "react-redux";
 import Config from "../../config";
 import * as ALLMCORE from "@material-ui/core";
 import cookie from "react-cookies";
-
+import RemoveRedEyeOutlinedIcon from "@material-ui/icons/RemoveRedEyeOutlined";
 import * as ALL from "../../components";
 import { Modal } from "qdm-component-library";
-import { Grid, Typography, Avatar } from "@material-ui/core";
+import { Grid, Typography, Avatar, Paper } from "@material-ui/core";
 
 import qdmstyles from "./styles.json";
 import "./index.css";
@@ -216,13 +216,9 @@ function Alerttablevalue(props) {
                 xl={1}
                 xs={1}
               >
-                <Avatar
-                  key={"0"}
-                  id={"xIpD2"}
-                  alt={"Avatar"}
-                  variant={"rounded"}
-                  style={qdmstyles.xIpD}
-                ></Avatar>
+                <RemoveRedEyeOutlinedIcon
+                  style={{ color: "#2A3C50", fontSize: "20px" }}
+                />
               </Grid>
             </Grid>
           </Grid>

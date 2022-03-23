@@ -155,7 +155,7 @@ function Statuslist(props) {
                 renderInput={(params) => (
                   <ALLMCORE.TextField
                     {...params}
-                    label={"Active"}
+                    label={""}
                     variant="outlined"
                   />
                 )}

@@ -26,7 +26,7 @@ function Mappeddespensablecomp(props) {
   const [state, setState] = React.useState({
     permissionData: null,
   });
-
+  const [addMappeddispensable, setAddMappeddispensable] = React.useState([""]);
   const changeState = (key, value) => {
     setState({
       ...state,
@@ -46,7 +46,13 @@ function Mappeddespensablecomp(props) {
   }, []);
 
   ///fetching all permission
-
+  const handleMappedDispensable = (key) => {
+    console.log("key value :", key);
+    var deletedaddmapped = [...addMappeddispensable];
+    deletedaddmapped.splice(key, 1);
+    console.log(deletedaddmapped);
+    setAddMappeddispensable(deletedaddmapped);
+  };
   React.useEffect(() => {}, [state]);
 
   const { data, index } = props;
@@ -109,223 +115,235 @@ function Mappeddespensablecomp(props) {
                   id={"mapped_dispensable_add_new_button"}
                   variant={"text"}
                   color={"primary"}
-                  children={"+Add New"}
+                  children={"+ Add New"}
                   aliasName={"mappeddispensableaddnewbutton"}
                   style={qdmstyles.NBvD}
+                  onClick={() =>
+                    setAddMappeddispensable([...addMappeddispensable, ""])
+                  }
                 ></Button>
               </Grid>
             </Grid>
-            <Grid
-              key={"1"}
-              id={"OeOjQ"}
-              container={true}
-              direction={"row"}
-              justifyContent={"flex-start"}
-              alignItems={"center"}
-              lg={"12"}
-              md={"12"}
-              sm={"12"}
-              xl={"12"}
-              xs={"12"}
-            >
-              <Grid
-                key={"0"}
-                id={"aq1c2"}
-                container={""}
-                direction={"column"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                item={true}
-                spacing={""}
-                lg={"4"}
-                alignContent={"center"}
-                md={"4"}
-                sm={"4"}
-                xl={"4"}
-                xs={"4"}
-                style={qdmstyles.apKu}
-              >
-                <Grid
-                  key={"0"}
-                  id={"dIQ02"}
-                  container={""}
-                  direction={"row"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  item={true}
-                  lg={"12"}
-                  md={"12"}
-                  sm={"12"}
-                  xl={"12"}
-                  xs={"12"}
-                  style={qdmstyles.NTuH}
-                >
-                  <Typography
-                    key={"0"}
-                    id={"item_code_description_header"}
-                    align={"inherit"}
-                    color={"initial"}
-                    display={"initial"}
-                    variant={"body1"}
-                    children={"Item Code & Description"}
-                    aliasName={"itemcodedescriptionheader"}
-                    style={qdmstyles.fWx}
-                  ></Typography>
-                </Grid>
-                <Grid
-                  key={"1"}
-                  id={"dIQ02"}
-                  container={""}
-                  direction={"row"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  item={true}
-                  lg={"12"}
-                  md={"12"}
-                  sm={"12"}
-                  xl={"12"}
-                  xs={"12"}
-                >
-                  <Autocomplete
-                    id={"8VQ95"}
-                    style={qdmstyles?.VQ}
-                    value={state?.mappeddespensablecomp_8vq95 ?? null}
-                    onLoad={() =>
-                      setState({
-                        mappeddespensablecomp_8vq95:
-                          state?.mappeddespensablecomp_8vq95 ?? null,
-                      })
-                    }
-                    getOptionLabel={(option) => option?.["label"]}
-                    options={[] ?? []}
-                    size={"small"}
-                    renderInput={(params) => (
-                      <ALLMCORE.TextField
-                        {...params}
-                        placeholder="label"
-                        variant="outlined"
-                      />
-                    )}
-                  />
-                </Grid>
-              </Grid>
-              <Grid
-                key={"1"}
-                id={"vVPnE"}
-                container={true}
-                direction={"row"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                lg={"4"}
-                md={"4"}
-                sm={"4"}
-                xl={"4"}
-                xs={"4"}
-              >
-                <Grid
-                  key={"0"}
-                  id={"5zR5Z"}
-                  container={""}
-                  direction={"row"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  lg={"12"}
-                  md={"12"}
-                  sm={"12"}
-                  xl={"12"}
-                  xs={"12"}
-                  style={qdmstyles.fToh}
-                >
-                  <Typography
-                    key={"0"}
-                    id={"preferred_sequence_header"}
-                    align={"inherit"}
-                    color={"initial"}
-                    display={"initial"}
-                    variant={"body1"}
-                    children={"Preferred Sequence"}
-                    aliasName={"preferredsequenceheader"}
-                    style={qdmstyles.HRAX}
-                  ></Typography>
-                </Grid>
-                <Grid
-                  key={"1"}
-                  id={"aq1c2"}
-                  container={true}
-                  direction={"row"}
-                  justifyContent={"center"}
-                  alignItems={"center"}
-                  item={true}
-                  spacing={""}
-                  lg={"12"}
-                  alignContent={"center"}
-                  md={"12"}
-                  sm={"12"}
-                  xl={"12"}
-                  xs={"12"}
-                  style={qdmstyles.sCN}
-                >
+            {addMappeddispensable.map((e, addMappeddispensableindex) => {
+              return (
+                <>
                   <Grid
-                    key={"0"}
-                    id={"dIQ02"}
-                    container={""}
+                    key={addMappeddispensableindex}
+                    id={"OeOjQ"}
+                    container={true}
                     direction={"row"}
-                    justifyContent={"center"}
+                    justifyContent={"flex-start"}
                     alignItems={"center"}
-                    item={true}
-                    lg={"10"}
-                    md={"10"}
-                    sm={"10"}
-                    xl={"10"}
-                    xs={"10"}
+                    lg={"12"}
+                    md={"12"}
+                    sm={"12"}
+                    xl={"12"}
+                    xs={"12"}
                   >
-                    <TextField
+                    <Grid
                       key={"0"}
-                      id={"preferred_sequence_value"}
-                      label={""}
-                      placeholder={""}
-                      type={"text"}
-                      select={""}
-                      size={"small"}
-                      fullWidth={true}
-                      variant={"outlined"}
-                      margin={"none"}
-                      aliasName={"preferredsequencevalue"}
-                      style={qdmstyles.tEKqK}
-                    ></TextField>
+                      id={"aq1c2"}
+                      container={""}
+                      direction={"column"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      item={true}
+                      spacing={""}
+                      lg={"4"}
+                      alignContent={"center"}
+                      md={"4"}
+                      sm={"4"}
+                      xl={"4"}
+                      xs={"4"}
+                      style={qdmstyles.apKu}
+                    >
+                      <Grid
+                        key={"0"}
+                        id={"dIQ02"}
+                        container={""}
+                        direction={"row"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                        item={true}
+                        lg={"12"}
+                        md={"12"}
+                        sm={"12"}
+                        xl={"12"}
+                        xs={"12"}
+                        style={qdmstyles.NTuH}
+                      >
+                        <Typography
+                          key={"0"}
+                          id={"item_code_description_header"}
+                          align={"inherit"}
+                          color={"initial"}
+                          display={"initial"}
+                          variant={"body1"}
+                          children={"Item Code & Description"}
+                          aliasName={"itemcodedescriptionheader"}
+                          style={qdmstyles.fWx}
+                        ></Typography>
+                      </Grid>
+                      <Grid
+                        key={"1"}
+                        id={"dIQ02"}
+                        container={""}
+                        direction={"row"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                        item={true}
+                        lg={"12"}
+                        md={"12"}
+                        sm={"12"}
+                        xl={"12"}
+                        xs={"12"}
+                      >
+                        <Autocomplete
+                          id={"8VQ95"}
+                          style={qdmstyles?.VQ}
+                          value={state?.mappeddespensablecomp_8vq95 ?? null}
+                          onLoad={() =>
+                            setState({
+                              mappeddespensablecomp_8vq95:
+                                state?.mappeddespensablecomp_8vq95 ?? null,
+                            })
+                          }
+                          getOptionLabel={(option) => option?.["label"]}
+                          options={[] ?? []}
+                          size={"small"}
+                          renderInput={(params) => (
+                            <ALLMCORE.TextField
+                              {...params}
+                              placeholder=""
+                              variant="outlined"
+                            />
+                          )}
+                        />
+                      </Grid>
+                    </Grid>
+                    <Grid
+                      key={"1"}
+                      id={"vVPnE"}
+                      container={true}
+                      direction={"row"}
+                      justifyContent={"center"}
+                      alignItems={"center"}
+                      lg={"4"}
+                      md={"4"}
+                      sm={"4"}
+                      xl={"4"}
+                      xs={"4"}
+                    >
+                      <Grid
+                        key={"0"}
+                        id={"5zR5Z"}
+                        container={""}
+                        direction={"row"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                        lg={"12"}
+                        md={"12"}
+                        sm={"12"}
+                        xl={"12"}
+                        xs={"12"}
+                        style={qdmstyles.fToh}
+                      >
+                        <Typography
+                          key={"0"}
+                          id={"preferred_sequence_header"}
+                          align={"inherit"}
+                          color={"initial"}
+                          display={"initial"}
+                          variant={"body1"}
+                          children={"Preferred Sequence"}
+                          aliasName={"preferredsequenceheader"}
+                          style={qdmstyles.HRAX}
+                        ></Typography>
+                      </Grid>
+                      <Grid
+                        key={"1"}
+                        id={"aq1c2"}
+                        container={true}
+                        direction={"row"}
+                        justifyContent={"center"}
+                        alignItems={"center"}
+                        item={true}
+                        spacing={""}
+                        lg={"12"}
+                        alignContent={"center"}
+                        md={"12"}
+                        sm={"12"}
+                        xl={"12"}
+                        xs={"12"}
+                        style={qdmstyles.sCN}
+                      >
+                        <Grid
+                          key={"0"}
+                          id={"dIQ02"}
+                          container={""}
+                          direction={"row"}
+                          justifyContent={"center"}
+                          alignItems={"center"}
+                          item={true}
+                          lg={"10"}
+                          md={"10"}
+                          sm={"10"}
+                          xl={"10"}
+                          xs={"10"}
+                        >
+                          <TextField
+                            key={"0"}
+                            id={"preferred_sequence_value"}
+                            label={""}
+                            placeholder={""}
+                            type={"text"}
+                            select={""}
+                            size={"small"}
+                            fullWidth={true}
+                            variant={"outlined"}
+                            margin={"none"}
+                            aliasName={"preferredsequencevalue"}
+                            style={qdmstyles.tEKqK}
+                          ></TextField>
+                        </Grid>
+                        <Grid
+                          key={"1"}
+                          id={"aq1c2"}
+                          container={""}
+                          direction={"column"}
+                          justifyContent={"center"}
+                          alignItems={"center"}
+                          item={true}
+                          spacing={""}
+                          lg={"2"}
+                          alignContent={"center"}
+                          md={"2"}
+                          sm={"2"}
+                          xl={"2"}
+                          xs={"2"}
+                          style={qdmstyles.mwr}
+                        >
+                          <Avatar
+                            key={"0"}
+                            id={"preferred_sequence_delete_icon"}
+                            alt={"Avatar"}
+                            variant={"rounded"}
+                            src={
+                              "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/317182133"
+                            }
+                            aliasName={"preferredsequencedeleteicon"}
+                            style={qdmstyles.oNN}
+                            onClick={() =>
+                              handleMappedDispensable(addMappeddispensableindex)
+                            }
+                          ></Avatar>
+                        </Grid>
+                      </Grid>
+                    </Grid>
                   </Grid>
-                  <Grid
-                    key={"1"}
-                    id={"aq1c2"}
-                    container={""}
-                    direction={"column"}
-                    justifyContent={"center"}
-                    alignItems={"center"}
-                    item={true}
-                    spacing={""}
-                    lg={"2"}
-                    alignContent={"center"}
-                    md={"2"}
-                    sm={"2"}
-                    xl={"2"}
-                    xs={"2"}
-                    style={qdmstyles.mwr}
-                  >
-                    <Avatar
-                      key={"0"}
-                      id={"preferred_sequence_delete_icon"}
-                      alt={"Avatar"}
-                      variant={"rounded"}
-                      src={
-                        "https://fileupload.dev.ainqaplatform.in/ATP_Platform_DEV/317182133"
-                      }
-                      aliasName={"preferredsequencedeleteicon"}
-                      style={qdmstyles.oNN}
-                    ></Avatar>
-                  </Grid>
-                </Grid>
-              </Grid>
-            </Grid>
+                </>
+              );
+            })}
           </Grid>
         </React.Fragment>
       )}
